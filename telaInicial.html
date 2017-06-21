@@ -1,0 +1,337 @@
+<section class="row conteudoPrincipal" ng-init="carregarSlider()">
+            
+    <div class="slider wow fadeIn">
+        <ul class="slides">
+            <li>
+                <img class="responsive-img" src="resources/cup-of-coffee-1280537_1280.jpg"> 
+                <div class="caption center-align">
+                  <h3>{{bemVindo}}</h3>
+                  <h5 class="light grey-text text-lighten-3">Breno Prata</h5>
+                  <i class="fa fa-angle-double-down fa-3x" aria-hidden="true"></i>
+                </div>
+            </li>
+            <li>
+                <img class="responsive-img" src="resources/highway-216090_1280.jpg"> 
+                <div class="caption left-align">
+                  <h3>{{resumo}}:</h3>
+                  <h5 class="light grey-text text-lighten-3">{{desenvolvedor}}</h5>
+                  <h5 class="light grey-text text-lighten-3">21 {{anos}}</h5>
+                  <h5 class="light grey-text text-lighten-3">{{cafe}}</h5>
+                  <h5 class="light grey-text text-lighten-3">{{apaixonadoHTML}}</h5>
+
+                </div>
+            </li>
+            <li>
+                <img class="responsive-img" src="resources/seo-2078785_1280.png"> 
+                <div class="caption right-align">
+                  <h3 class="" ><strong>Responsive Design</strong></h3>
+                  <h5 class=""><strong>{{dica}}</strong></h5>
+                  <h5 class=""><strong>{{tenteMobile}}</strong></h5>
+                </div>
+            </li>
+            <li>
+                <img class="responsive-img" src="resources/mail-2237468_1280.png"> 
+                <div class="caption left-align">
+                  <h3 style="color:black">{{contatoSlider}}:</h3>
+                  <h5 class="" style="color:black">brenoprata10@gmail.com</h5>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="conteudo col s12 offset-m1 m10 offset-m1 offset-l1 l10 offset-l1 wow fadeInUp" style="margin-top: 2%">
+
+        <h4><i class="fa fa-code fadeIn" aria-hidden="true"></i><strong> {{qualificacoes}}:</strong></h4>
+
+            <h5 class="subMenu wow fadeInDown"><i class="fa fa-chevron-right" aria-hidden="true"></i><strong> {{linguagens}}:</strong></h5>
+
+            <ul class="listaQualificacoes" style="height:200px; margin-top:4% !important" >
+
+                <li class="itemLista wow fadeInLeft">
+
+                    <span class="flow-text"><strong>- </strong> Java</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInRight">
+
+                    <span class="flow-text"><strong>-</strong> C</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInLeft">
+
+                    <span class="flow-text"><strong>- </strong> C++</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInRight">
+
+                    <span class="flow-text"><strong>-</strong> C#</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInLeft">
+
+                    <span class="flow-text"><strong>- </strong> Swift {{basico}}</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInRight">
+
+                    <span class="flow-text"><strong>-</strong> HTML</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInLeft">
+
+                    <span class="flow-text"><strong>-</strong> CSS3</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInRight">
+
+                    <span class="flow-text"><strong>-</strong> Javascript</span>
+
+                </li>
+
+            </ul>
+
+            <h5 class="subMenu wow fadeInDown"><i class="fa fa-chevron-right" aria-hidden="true"></i><strong> Frameworks:</strong></h5>
+
+            <ul class="listaQualificacoes" style="height:200px; margin-top:4%" >
+
+                <li class="itemLista wow fadeInLeft">
+
+                    <span class="flow-text"><strong>- </strong> Angular JS</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInRight">
+
+                    <span class="flow-text"><strong>-</strong> JSTL</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInLeft">
+
+                    <span class="flow-text"><strong>- </strong> JSF</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInRight">
+
+                    <span class="flow-text"><strong>-</strong> Struts 2</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInLeft">
+
+                    <span class="flow-text"><strong>- </strong> JSP</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInRight">
+
+                    <span class="flow-text"><strong>-</strong> PHP {{basico}}</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInLeft">
+
+                    <span class="flow-text"><strong>-</strong> Vaadin</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInRight">
+
+
+
+                </li>
+
+            </ul>
+
+            <h5 class="subMenu wow fadeInDown"><i class="fa fa-chevron-right" aria-hidden="true"></i><strong> {{versionamento}}:</strong></h5>
+
+            <ul class="listaQualificacoes" style="height:50px; margin-top:4%" >
+
+                <li class="itemLista wow fadeInLeft">
+
+                    <span class="flow-text"><strong>- </strong> SVN</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInRight">
+
+                    <span class="flow-text"><strong>-</strong> GIT</span>
+
+                </li>
+
+            </ul>
+
+            <h5 class="subMenu wow fadeInDown"><i class="fa fa-chevron-right" aria-hidden="true"></i><strong> {{tecnologias}}:</strong></h5>
+
+            <ul class="listaQualificacoes" style="height:200px; margin-top:4%" >
+
+                <li class="itemLista wow fadeInLeft">
+
+                    <span class="flow-text"><strong>- </strong> Maven</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInRight">
+
+                    <span class="flow-text"><strong>-</strong> Hibernate</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInLeft">
+
+                    <span class="flow-text"><strong>- </strong> JPA</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInRight">
+
+                    <span class="flow-text"><strong>-</strong> JPQL</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInLeft">
+
+                    <span class="flow-text"><strong>- </strong> Oracle Database</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInRight">
+
+                    <span class="flow-text"><strong>- </strong> JBOSS</span>
+
+                </li>
+
+            </ul>
+
+            <h5 class="subMenu wow fadeInDown"><i class="fa fa-chevron-right" aria-hidden="true"></i><strong> {{teste}}:</strong></h5>
+
+            <ul class="listaQualificacoes" style="height:50px; margin-top:4%" >
+
+                <li class="itemLista wow fadeInLeft">
+
+                    <span class="flow-text"><strong>- </strong> TDD</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInRight">
+
+                    <span class="flow-text"><strong>-</strong> Selenium</span>
+
+                </li>
+
+            </ul>
+
+            <h5 class="subMenu wow fadeInDown"><i class="fa fa-chevron-right" aria-hidden="true"></i><strong> Design:</strong></h5>
+
+            <ul class="listaQualificacoes" style="height:110px; margin-top:4%" >
+
+                <li class="itemLista wow fadeInLeft">
+
+                    <span class="flow-text"><strong>- </strong> Frontend</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInRight">
+
+                    <span class="flow-text"><strong>-</strong> UX Design</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInLeft">
+
+                    <span class="flow-text"><strong>-</strong> Responsive</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInRight">
+
+
+
+                </li>
+
+            </ul>
+
+            <h5 class="subMenu wow fadeInDown"><i class="fa fa-chevron-right" aria-hidden="true"></i><strong> {{ferramentas}}:</strong></h5>
+
+            <ul class="listaQualificacoes" style="height:130px; margin-top:4%" >
+
+                <li class="itemLista wow fadeInLeft">
+
+                    <span class="flow-text"><strong>- </strong> Eclipse IDE</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInRight">
+
+                    <span class="flow-text"><strong>-</strong> IntelliJ IDEA</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInLeft">
+
+                    <span class="flow-text"><strong>-</strong> Brackets</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInRight">
+
+                    <span class="flow-text"><strong>-</strong> Jira</span>
+
+                </li>
+                
+                <li class="itemLista wow fadeInRight">
+
+                    <span class="flow-text"><strong>-</strong> Cloud 9</span>
+
+                </li>
+                
+                <li class="itemLista wow fadeInRight">
+
+                    
+
+                </li>
+
+            </ul>
+        
+            <h5 class="subMenu wow fadeInDown"><i class="fa fa-chevron-right" aria-hidden="true"></i><strong> {{idiomas}}:</strong></h5>
+
+            <ul class="listaQualificacoes" style="height:130px; margin-top:4%" >
+
+                <li class="itemLista wow fadeInLeft">
+
+                    <span class="flow-text"><strong>- </strong> {{portugues}}</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInRight">
+
+                    <span class="flow-text"><strong>-</strong> {{ingles}}</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInLeft">
+
+                    <span class="flow-text"><strong>-</strong> {{espanhol}} {{basico}}</span>
+
+                </li>
+
+                <li class="itemLista wow fadeInRight">
+
+
+
+                </li>
+
+            </ul>
+
+    </div>
+
+</section>

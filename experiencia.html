@@ -1,0 +1,224 @@
+<section ng-init="carregarParallax()">
+    
+    <div class="parallax-container wow fadeIn" style="width:100%">
+        
+        <div class="parallax"><img class="responsive-img" src="resources/startup-593327_1920.jpg"></div>
+        
+    </div>
+    
+    <div class="section white wow fadeInUp">
+        
+        <div class="row container">
+            
+            <h4 class="col s12 m12 l12 wow fadeInUp"><i class="fa fa-code fadeIn" aria-hidden="true"></i><strong> {{experienciaMenu}}:</strong></h4>
+            
+            <img class="responsive-img wow fadeInRight col s12 m5 l3" src="resources/Indra-Sistemas-Logo.svg.png">
+            
+            <h5 class="col s12 m12 l12 wow fadeInUp flow-text"><i class="fa fa-angle-down" aria-hidden="true"></i><strong> Indra Company:</strong></h5>
+            
+            <p class="flow-text col s12 m12 offset-l1 l11"><i class="fa fa-arrow-right" aria-hidden="true"></i> <b>{{periodo}}:</b> <strong>03/2017</strong> {{ate}} <strong>---</strong></p>
+            
+            <p class="flow-text col s12 m12 offset-l1 l11"><i class="fa fa-arrow-right" aria-hidden="true"></i> <b>{{cargo}}:</b> Trainee {{desenvolvimento}}</p>
+            
+            <p class="flow-text col s12 m12 offset-l1 l11"><i class="fa fa-arrow-right" aria-hidden="true"></i> <b>{{area}}:</b> {{desenvolvimento}} Web</p>
+            
+            <h5 class="col s12 m12 offset-l1 l11 wow fadeInUp flow-text"><i class="fa fa-angle-down" aria-hidden="true"></i><strong> {{participacoes}}:</strong></h5>
+            
+            <div class="card col s12 m6 offset-l1 l3 hoverable wow slideInLeft">
+                
+                <div class="card-image waves-effect waves-teal waves-light" style="display:flex; align-content:center">
+                    
+                    <img class="activator responsive-img" src="resources/mapa.jpg" style="max-height: 146px">
+                    
+                </div>
+                
+                <div class="card-content">
+                    
+                    <span class="card-title activator grey-text text-darken-4 waves-effect waves-teal">MAPA</span>
+                    
+                    <button class="btn activator" style="width:100%">{{projetos}}</button>
+                    
+                </div>
+                
+                <div class="card-reveal">
+                    
+                    <h5 class="card-title grey-text text-darken-4">{{projetos}}<i class="material-icons right">close</i></h5>
+                    
+                    <p class="flow-text tooltipped" data-position="right" data-delay="50" data-tooltip="Sistema Integrado de Produtos e Estabelecimentos Agropecuários">
+                        
+                        <i class="fa fa-circle" aria-hidden="true"></i> SIPEAGRO
+                    
+                    </p>
+                    
+                </div>
+                
+            </div>
+            
+             <p class="divider col s12 m12 l12"></p>
+            
+            <img class="responsive-img wow fadeInRight col s12 m5 l3" src="resources/logo-polisys.png">
+            
+            <h5 class="col s12 m12 l12 wow fadeInUp flow-text"><i class="fa fa-angle-down" aria-hidden="true"></i><strong> Polisys {{informatica}}:</strong></h5>
+            
+            <p class="flow-text col s12 m12 offset-l1 l11"><i class="fa fa-arrow-right" aria-hidden="true"></i> <b>{{periodo}}:</b> <strong>03/2016</strong> {{ate}} <strong>03/2017</strong></p>
+            
+            <p class="flow-text col s12 m12 offset-l1 l11"><i class="fa fa-arrow-right" aria-hidden="true"></i> <b>{{cargo}}:</b> {{estagiario}} {{desenvolvimento}}</p>
+            
+            <p class="flow-text col s12 m12 offset-l1 l11"><i class="fa fa-arrow-right" aria-hidden="true"></i> <b>{{area}}:</b> {{desenvolvimento}} Web</p>
+            
+            <h5 class="col s12 m12 offset-l1 l11 wow fadeInUp flow-text"><i class="fa fa-angle-down" aria-hidden="true"></i><strong> {{participacoes}}:</strong></h5>
+            
+            <div class="card col s12 m6 offset-l1 l3 hoverable wow slideInLeft">
+                
+                <div class="card-image waves-effect waves-teal waves-light" style="display:flex; align-content:center">
+                    
+                    <img class="activator responsive-img" src="resources/Embrapa.svg.png" style="max-height: 146px">
+                    
+                </div>
+                
+                <div class="card-content">
+                    
+                    <span class="card-title activator grey-text text-darken-4 waves-effect waves-teal">Embrapa</span>
+                    
+                    <button class="btn activator" style="width:100%">{{projetos}}</button>
+                    
+                </div>
+                
+                <div class="card-reveal">
+                    
+                    <h5 class="card-title grey-text text-darken-4">{{projetos}}<i class="material-icons right">close</i></h5>
+                    
+                    <p class="flow-text tooltipped" data-position="right" data-delay="50" data-tooltip="Sistema de Gestão da Propriedade Intelectual">
+                        
+                        <i class="fa fa-circle" aria-hidden="true"></i> Sisgepi
+                    
+                    </p>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="card col s12 m6 offset-l1 l3 hoverable wow slideInUp" >
+                
+                <div class="card-image waves-effect waves-teal waves-light" style="display:flex; align-content:center">
+                    
+                    <img class="activator responsive-img" src="resources/TRE-MT-660x330.jpg" style="max-height: 146px">
+                    
+                </div>
+                
+                <div class="card-content">
+                    
+                    <span class="card-title activator grey-text text-darken-4 waves-effect waves-teal">TRE - MT</span>
+                    
+                    <button class="btn activator" style="width:100%">{{projetos}}</button>
+                    
+                </div>
+                
+                <div class="card-reveal">
+                    
+                    <h5 class="card-title grey-text text-darken-4">{{projetos}}<i class="material-icons right">close</i></h5>
+                    
+                    <p class="flow-text tooltipped" data-position="right" data-delay="50" data-tooltip="Diário da Justiça Eleitoral">
+                        
+                        <i class="fa fa-circle" aria-hidden="true"></i> DJE
+                    
+                    </p>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="card col s12 m6 offset-l1 l3 hoverable wow slideInRight">
+                
+                <div class="card-image waves-effect waves-teal waves-light" style="display:flex; align-content:center">
+                    
+                    <img class="activator responsive-img" src="resources/bndes.jpg" style="max-height: 146px">
+                    
+                </div>
+                
+                <div class="card-content">
+                    
+                    <span class="card-title activator grey-text text-darken-4 waves-effect waves-teal">BNDES</span>
+                    
+                    <button class="btn activator" style="width:100%">{{projetos}}</button>
+                    
+                </div>
+                
+                <div class="card-reveal">
+                    
+                    <h5 class="card-title grey-text text-darken-4">{{projetos}}<i class="material-icons right">close</i></h5>
+                    
+                    <p class="flow-text tooltipped" data-position="right" data-delay="50" data-tooltip="Viagens">
+                        
+                        <i class="fa fa-circle" aria-hidden="true"></i> Viagens
+                    
+                    </p>
+                    
+                    <p class="flow-text tooltipped" data-position="right" data-delay="50" data-tooltip="Serviço de Informação ao Cidadão">
+                        
+                        <i class="fa fa-circle" aria-hidden="true"></i> SIC
+                    
+                    </p>
+                    
+                    <p class="flow-text tooltipped" data-position="right" data-delay="50" data-tooltip="Financiamento de bens e serviços para exportação">
+                        
+                        <i class="fa fa-circle" aria-hidden="true"></i> EXIM
+                    
+                    </p>
+                    
+                </div>
+                
+            </div>
+            
+            <p class="col s12 m12 l12 divider"></p>
+            
+            <img class="responsive-img wow fadeInRight col s12 m5 l3" src="resources/campus_party.png">
+            
+            <h5 class="col s12 m12 l12 wow fadeInUp flow-text"><i class="fa fa-angle-down" aria-hidden="true"></i><strong> Campus Party Brasília</strong></h5>
+            
+            <p class="flow-text col s12 m12 offset-l1 l11"><i class="fa fa-arrow-right" aria-hidden="true"></i> <b>{{periodo}}:</b> <strong>14/06/2017</strong> {{ate}} <strong>18/06/2017</strong></p>
+            
+            <h5 class="col s12 m12 offset-l1 l11 wow fadeInUp flow-text"><i class="fa fa-angle-down" aria-hidden="true"></i><strong> Hackathons:</strong></h5>
+            
+            <div class="card col s12 m6 offset-l1 l3 hoverable wow slideInLeft">
+                
+                <div class="card-image waves-effect waves-teal waves-light" style="display:flex; align-content:center">
+                    
+                    <img class="activator responsive-img" src="resources/dado_na_mao.png" style="max-height: 146px">
+                    
+                </div>
+                
+                <div class="card-content">
+                    
+                    <span class="card-title activator grey-text text-darken-4 waves-effect waves-teal">IBGE</span>
+                    
+                    <button class="btn activator" style="width:100%">{{projetos}}</button>
+                    
+                </div>
+                
+                <div class="card-reveal">
+                    
+                    <h5 class="card-title grey-text text-darken-4">{{projetos}}<i class="material-icons right">close</i></h5>
+                    
+                    <p class="flow-text tooltipped" data-position="right" data-delay="50" data-tooltip="SuperCidades">
+                        
+                       <i class="fa fa-circle" aria-hidden="true"></i> SuperCidade
+                    
+                    </p>
+                    
+                    <p class="flow-text tooltipped" data-position="right" data-delay="50" data-tooltip="4º Colocado/ 13 grupos">
+                        
+                        <i class="fa fa-circle" aria-hidden="true"></i> 4º colocado
+                    
+                    </p>
+
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+
+</section>  
+      

@@ -1,0 +1,465 @@
+<section ng-init="carregarParallax()">
+    
+    <div class="parallax-container wow fadeIn hide-on-med-and-down" style="width:100%">
+        
+        <div class="parallax"><img class="responsive-img mobileImage" src="resources/hat-1674894_1280.png"></div>
+        
+    </div>
+    
+    <div class=" wow fadeIn hide-on-large-only" style="width:100%">
+        
+        <div ><img class="responsive-img mobileImage" src="resources/hat-1674894_1280.png"></div>
+        
+    </div>
+    
+    <div class="section white wow fadeInUp" >
+        
+        <div class="row container">
+            
+            <h4 class="col s12 m12 l12 wow fadeInUp"><i class="fa fa-code fadeIn" aria-hidden="true"></i><strong> Alura {{cursos}}:</strong></h4>
+            
+            <img class="responsive-img wow fadeInRight col s12 m5 l3" src="resources/logo-alura.svg">
+            
+            <h5 class="col s12 m12 l12 wow fadeInUp flow-text"><i class="fa fa-angle-down" aria-hidden="true"></i><strong> {{cursos}}:</strong></h5>
+            
+            <div class="card campoCursos">
+            
+                <div class="card wow slideInLeft  cartaoCurso hoverable">
+
+                    <div class="card-image waves-effect waves-teal waves-light" >
+
+                        <img class="activator imagemCurso" src="resources/angularjs-mvc.svg">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h5 class="grey-text text-darken-4 waves-effect waves-teal" style="font-size:18px">Angular 1: {{descricaoAngular}}</h5>
+                        
+                        <button onclick="window.open('https://cursos.alura.com.br/certificate/brenoprata/angularjs-mvc')" class="btn" style="width:100%">{{certificado}}</button> 
+
+                    </div>
+
+                </div>
+                
+                <div class="card wow slideInUp  cartaoCurso hoverable">
+
+                    <div class="card-image waves-effect waves-teal waves-light" >
+
+                        <img class="activator imagemCurso" src="resources/jogos-mobile-com-unity.svg">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h5 class="grey-text text-darken-4 waves-effect waves-teal" style="font-size:18px">{{descricaoUnity}}</h5>
+
+                        <button onclick="window.open('https://cursos.alura.com.br/certificate/brenoprata/jogos-mobile-com-unity')" class="btn" style="width:100%">{{certificado}}</button> 
+
+                    </div>
+
+                </div>
+                
+                <div class="card wow slideInRight  cartaoCurso hoverable">
+
+                    <div class="card-image waves-effect waves-teal waves-light" >
+
+                        <img class="activator imagemCurso" src="resources/java8-lambdas.svg">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h5 class="grey-text text-darken-4 waves-effect waves-teal" style="font-size:18px">{{descricaoJava8}}</h5>
+
+                        <button onclick="window.open('https://cursos.alura.com.br/certificate/brenoprata/java8-lambdas')" class="btn" style="width:100%">{{certificado}}</button>
+
+                    </div>
+
+                </div>
+                
+                <div class="card wow slideInLeft  cartaoCurso hoverable">
+
+                    <div class="card-image waves-effect waves-teal waves-light" >
+
+                        <img class="activator imagemCurso" src="resources/tdd.svg">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h5 class="grey-text text-darken-4 waves-effect waves-teal" style="font-size:18px">{{descricaoTesteTDD}}</h5>
+
+                        <button onclick="window.open('https://cursos.alura.com.br/certificate/brenoprata/tdd')" class="btn" style="width:100%">{{certificado}}</button>
+                        
+                    </div>
+
+                </div>
+                
+                <div class="card wow slideInUp  cartaoCurso hoverable">
+
+                    <div class="card-image waves-effect waves-teal waves-light" >
+
+                        <img class="activator imagemCurso" src="resources/selenium.svg">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h5 class="grey-text text-darken-4 waves-effect waves-teal" style="font-size:18px">{{descricaoSelenium}}</h5>
+
+                        <button onclick="window.open('https://cursos.alura.com.br/certificate/brenoprata/selenium')" class="btn" style="width:100%">{{certificado}}</button>
+
+                    </div>
+
+                </div>
+                
+                <div class="card wow slideInRight  cartaoCurso hoverable">
+
+                    <div class="card-image waves-effect waves-teal waves-light" >
+
+                        <img class="activator imagemCurso" src="resources/design-patterns.svg">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h5 class="grey-text text-darken-4 waves-effect waves-teal" style="font-size:18px">{{descricaoDesignPatternsJava1}}</h5>
+
+                        <button onclick="window.open('https://cursos.alura.com.br/certificate/brenoprata/design-patterns')" class="btn" style="width:100%">{{certificado}}</button>
+
+                    </div>
+
+                </div>
+                
+                <div class="card wow slideInLeft  cartaoCurso hoverable">
+
+                    <div class="card-image waves-effect waves-teal waves-light" >
+
+                        <img class="activator imagemCurso" src="resources/introducao-html-css.svg">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h5 class="grey-text text-darken-4 waves-effect waves-teal" style="font-size:18px">{{descricaoWebHTML1}}</h5>
+                        
+                        <button onclick="window.open('https://cursos.alura.com.br/certificate/brenoprata/introducao-html-css')" class="btn" style="width:100%">{{certificado}}</button>
+
+                    </div>
+
+                </div>
+                
+                <div class="card wow slideInUp  cartaoCurso hoverable">
+
+                    <div class="card-image waves-effect waves-teal waves-light" >
+
+                        <img class="activator imagemCurso" src="resources/avancando-html-css.svg">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h5 class="grey-text text-darken-4 waves-effect waves-teal" style="font-size:18px">{{descricaoWebHTML2}}</h5>
+                        
+                        <button onclick="window.open('https://cursos.alura.com.br/certificate/brenoprata/avancando-html-css')" class="btn" style="width:100%">{{certificado}}</button>
+
+                    </div>
+
+                </div>
+                
+                <div class="card wow slideInRight  cartaoCurso hoverable">
+
+                    <div class="card-image waves-effect waves-teal waves-light" >
+
+                        <img class="activator imagemCurso" src="resources/fundamentos-de-csharp.svg">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h5 class="grey-text text-darken-4 waves-effect waves-teal" style="font-size:18px">{{descricaoLinguagemcSharp}}</h5>
+                        
+                        <button onclick="window.open('https://cursos.alura.com.br/certificate/brenoprata/fundamentos-de-csharp')" class="btn" style="width:100%">{{certificado}}</button>
+
+                    </div>
+
+                </div>
+                
+                <div class="card wow slideInLeft  cartaoCurso hoverable">
+
+                    <div class="card-image waves-effect waves-teal waves-light" >
+
+                        <img class="activator imagemCurso" src="resources/php-mysql-e-fundamentos-da-web.svg">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h5 class="grey-text text-darken-4 waves-effect waves-teal" style="font-size:18px">{{descricaoLinguagemPHP}}</h5>
+                        
+                        <button onclick="window.open('https://cursos.alura.com.br/certificate/brenoprata/php-mysql-e-fundamentos-da-web')" class="btn" style="width:100%">{{certificado}}</button>
+
+                    </div>
+
+                </div>
+                
+                <div class="card wow slideInUp  cartaoCurso hoverable">
+
+                    <div class="card-image waves-effect waves-teal waves-light" >
+
+                        <img class="activator imagemCurso" src="resources/javascript-programando-na-linguagem-web.svg">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h5 class="grey-text text-darken-4 waves-effect waves-teal" style="font-size:18px">{{descricaoJavascript}}</h5>
+                        
+                        <button onclick="window.open('https://cursos.alura.com.br/certificate/brenoprata/javascript-programando-na-linguagem-web')" class="btn" style="width:100%">{{certificado}}</button>
+
+                    </div>
+
+                </div>
+                
+                <div class="card wow slideInRight  cartaoCurso hoverable">
+
+                    <div class="card-image waves-effect waves-teal waves-light" >
+
+                        <img class="activator imagemCurso" src="resources/posicione-elementos-com-flexbox.svg">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h5 class="grey-text text-darken-4 waves-effect waves-teal" style="font-size:18px">{{descricaoFlexbox}}</h5>
+                        
+                        <button onclick="window.open('https://cursos.alura.com.br/certificate/brenoprata/posicione-elementos-com-flexbox')" class="btn" style="width:100%">{{certificado}}</button>
+
+                    </div>
+
+                </div>
+                
+                <div class="card wow slideInLeft  cartaoCurso hoverable">
+
+                    <div class="card-image waves-effect waves-teal waves-light" >
+
+                        <img class="activator imagemCurso" src="resources/ux-base.svg">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h5 class="grey-text text-darken-4 waves-effect waves-teal" style="font-size:18px">{{descricaoUX1}}</h5>
+                        
+                        <button onclick="window.open('https://cursos.alura.com.br/certificate/brenoprata/ux-base')" class="btn" style="width:100%">{{certificado}}</button>
+
+                    </div>
+
+                </div>
+                
+                <div class="card wow slideInUp  cartaoCurso hoverable">
+
+                    <div class="card-image waves-effect waves-teal waves-light" >
+
+                        <img class="activator imagemCurso" src="resources/ux-strategy.svg">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h5 class="grey-text text-darken-4 waves-effect waves-teal" style="font-size:18px">{{descricaoUX2}}</h5>
+                        
+                        <button onclick="window.open('https://cursos.alura.com.br/certificate/brenoprata/ux-strategy')" class="btn" style="width:100%">{{certificado}}</button>
+
+                    </div>
+
+                </div>
+                
+                <div class="card wow slideInRight  cartaoCurso hoverable">
+
+                    <div class="card-image waves-effect waves-teal waves-light" >
+
+                        <img class="activator imagemCurso" src="resources/ux-usabilidade.svg">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h5 class="grey-text text-darken-4 waves-effect waves-teal" style="font-size:18px">{{descricaoUX3}}</h5>
+                        
+                        <button onclick="window.open('https://cursos.alura.com.br/certificate/brenoprata/ux-usabilidade')" class="btn" style="width:100%">{{certificado}}</button>
+
+                    </div>
+
+                </div>
+                
+                <div class="card wow slideInLeft  cartaoCurso hoverable">
+
+                    <div class="card-image waves-effect waves-teal waves-light" >
+
+                        <img class="activator imagemCurso" src="resources/ux-research.svg">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h5 class="grey-text text-darken-4 waves-effect waves-teal" style="font-size:18px">{{descricaoUX4}}</h5>
+
+                        <button onclick="window.open('https://cursos.alura.com.br/certificate/brenoprata/ux-research')" class="btn" style="width:100%">{{certificado}}</button>
+
+                    </div>
+
+                </div>
+                
+                <div class="card wow slideInUp  cartaoCurso hoverable">
+
+                    <div class="card-image waves-effect waves-teal waves-light" >
+
+                        <img class="activator imagemCurso" src="resources/ux-melhorias-de-produto.svg">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h5 class="grey-text text-darken-4 waves-effect waves-teal" style="font-size:18px">{{descricaoUX5}}</h5>
+
+                        <button onclick="window.open('https://cursos.alura.com.br/certificate/brenoprata/ux-melhorias-de-produto')" class="btn" style="width:100%">{{certificado}}</button>
+
+                    </div>
+
+                </div>
+                
+                <div class="card wow slideInUp  cartaoCurso hoverable">
+
+                    <div class="card-image waves-effect waves-teal waves-light" >
+
+                        <img class="activator imagemCurso" src="resources/ux-mitos-e-boas-praticas.svg">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h5 class="grey-text text-darken-4 waves-effect waves-teal" style="font-size:18px">{{descricaoUXMyths}}</h5>
+
+                        <button onclick="window.open('https://cursos.alura.com.br/certificate/brenoprata/ux-mitos-e-boas-praticas')" class="btn" style="width:100%">{{certificado}}</button>
+
+                    </div>
+
+                </div>
+                
+                <div class="card wow slideInRight  cartaoCurso hoverable">
+
+                    <div class="card-image waves-effect waves-teal waves-light" >
+
+                        <img class="activator imagemCurso" src="resources/introducao-ao-microcopy.svg">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h5 class="grey-text text-darken-4 waves-effect waves-teal" style="font-size:18px">{{descricaoMicrocopy}}</h5>
+                        
+                        <button onclick="window.open('https://cursos.alura.com.br/certificate/brenoprata/introducao-ao-microcopy')" class="btn" style="width:100%">{{certificado}}</button>
+
+                    </div>
+
+                </div>
+                
+                <div class="hide-on-med-and-down wow slideInRight  cartaoCurso hoverable">
+
+                
+
+                </div>
+                
+                <div class="hide-on-med-and-down wow slideInRight  cartaoCurso hoverable">
+
+                    
+
+                </div>
+                
+            </div>
+            
+            <p class="divider col s12 m12 l12"></p>
+            
+            <h4 class="col s12 wow fadeInUp"><i class="fa fa-code fadeIn" aria-hidden="true"></i><strong> Hackatruck:</strong></h4>
+            
+            <img class="responsive-img wow fadeInRight col s12 m5 l3" src="resources/Caminh%E2%88%86o_fundo_transparente_2.png">
+            
+            <h5 class="col s12 m12 l12 wow fadeInUp flow-text"><i class="fa fa-angle-down" aria-hidden="true"></i><strong> {{cursos}}:</strong></h5>
+            
+            <div class="card campoCursos">
+            
+                <div class="card wow slideInLeft  cartaoCurso hoverable">
+
+                    <div class="card-image waves-effect waves-teal waves-light" >
+
+                        <img class="activator imagemCurso" src="resources/maxresdefault.jpg">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h5 class="grey-text text-darken-4 waves-effect waves-teal" style="font-size:18px">{{descricaoEADHackatruck}}</h5>
+                        
+                        <a class="btn" href="https://cursos.alura.com.br/certificate/brenoprata/introducao-ao-microcopy" style="width:100%">{{certificado}}</a>
+
+                    </div>
+
+                </div>
+                
+                <div class="card wow slideInRight  cartaoCurso hoverable">
+
+                    <div class="card-image waves-effect waves-teal waves-light" >
+
+                        <img class="activator imagemCurso" src="resources/maxresdefault.jpg">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h5 class="grey-text text-darken-4 waves-effect waves-teal" style="font-size:18px">{{descricaoHackatruck}}</h5>
+                        
+                        <a class="btn" href="https://cursos.alura.com.br/certificate/brenoprata/introducao-ao-microcopy" style="width:100%">{{certificado}}</a>
+
+                    </div>
+
+                </div>
+                
+            </div>
+            
+            <p class="divider col s12 m12 l12"></p>
+            
+            <h4 class="col s12 wow fadeInUp"><i class="fa fa-code fadeIn" aria-hidden="true"></i><strong> CNA:</strong></h4>
+            
+            <img class="responsive-img wow fadeInRight col s12 m5 l3" src="resources/empresa_577.jpg">
+            
+            <h5 class="col s12 m12 l12 wow fadeInUp flow-text"><i class="fa fa-angle-down" aria-hidden="true"></i><strong> {{cursos}}:</strong></h5>
+            
+            <div class="card campoCursos">
+            
+                <div class="card wow slideInLeft  cartaoCurso hoverable">
+
+                    <div class="card-image waves-effect waves-teal waves-light" >
+
+                        <img class="activator imagemCurso" src="resources/cna-logotipo.jpg"s>
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h5 class="grey-text text-darken-4 waves-effect waves-teal" style="font-size:18px">CNA - {{ingles}}</h5>
+                        
+                        <a class="btn" href="https://cursos.alura.com.br/certificate/brenoprata/introducao-ao-microcopy" style="width:100%">{{certificado}}</a>
+
+                    </div>
+
+                </div>
+                
+            </div>
+                
+        </div>
+        
+    </div>
+
+</section>
