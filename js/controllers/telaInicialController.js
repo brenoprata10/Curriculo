@@ -248,6 +248,10 @@ function($scope) {
         $scope.descricaoUXMyths =           "UX Myths: Frequent usability errors and good practices";
         
         $scope.descricaoMicrocopy =         "Microcopy: The influence of micro copy on the user experience";
+            
+        $scope.descricaoLess =              "LESS: Simple and productive CSS";
+        
+        $scope.descricaoIconografia =       "Course Iconography I: develop graphical representations from an identity";
         
         $scope.descricaoEADHackatruck =     "EAD Hackatruck - Concepts and Fundamentals SWIFT";
         
@@ -430,6 +434,10 @@ function($scope) {
         $scope.descricaoUX5 =               "UX Produto: monitore, mensure e teste o seu projeto";
             
         $scope.descricaoUXMyths =           "UX Mitos: Os erros frequentes de usabilidade e as boas práticas";
+            
+        $scope.descricaoLess =              "LESS: CSS simples e produtivo";
+        
+        $scope.descricaoIconografia =       "Curso Iconografia I: desenvolva representações gráficas a partir de uma identidade";
         
         $scope.descricaoMicrocopy =         "Microcopy: a influência do micro copy na experiência do usuario";
         

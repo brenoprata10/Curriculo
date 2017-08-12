@@ -207,6 +207,8 @@ html{
 
 .linhaInferior{
     
+    opacity: 0;
+    
     background-color: white;
     
     position: absolute;
@@ -234,6 +236,8 @@ html{
 .itemLinhaInferior:hover .linhaInferior{
     
     width: 100%;
+    
+    opacity: 1;
     
 }
 
