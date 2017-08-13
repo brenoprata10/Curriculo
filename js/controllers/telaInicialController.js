@@ -190,6 +190,8 @@ function($scope) {
         $scope.projetos =                   "Projects";
         
         $scope.sisgepiTooltip =             "Intellectual Property Management System";
+            
+        $scope.desenvolvedor =              "Junior Developer";
         
         /*---------------------------- Experiencias -------------------------------*/
         
@@ -252,6 +254,14 @@ function($scope) {
         $scope.descricaoLess =              "LESS: Simple and productive CSS";
         
         $scope.descricaoIconografia =       "Course Iconography I: develop graphical representations from an identity";
+            
+        $scope.descricaoJavascriptECMA6 =   "Advanced JavaScript I: ES6, Object Orientation, and Project Patterns";
+            
+        $scope.descricaoTypescript1 =       "TypeScript part 1: Evolving your Javascript"
+            
+        $scope.descricaoAngular2Parte1 =    "Angular 2: webapps even more powerful part 1"
+            
+        $scope.descricaoAngular2Parte2 =    "Angular 2: webapps even more powerful part 2"
         
         $scope.descricaoEADHackatruck =     "EAD Hackatruck - Concepts and Fundamentals SWIFT";
         
@@ -377,6 +387,8 @@ function($scope) {
         $scope.participacoes =              "Contribuições";
         
         $scope.projetos =                   "Projetos";
+            
+        $scope.desenvolvedor =              "Desenvolvedor Júnior";
         
         
         /*---------------------------- Experiencias -------------------------------*/
@@ -440,7 +452,15 @@ function($scope) {
         $scope.descricaoIconografia =       "Curso Iconografia I: desenvolva representações gráficas a partir de uma identidade";
         
         $scope.descricaoMicrocopy =         "Microcopy: a influência do micro copy na experiência do usuario";
+            
+        $scope.descricaoJavascriptECMA6 = "JavaScript avançado I: ES6, orientação a objetos e padrões de projetos"
+            
+        $scope.descricaoTypescript1 = "TypeScript parte 1: Evoluindo seu Javascript"
+            
+        $scope.descricaoAngular2Parte1 = "Angular 2: webapps ainda mais poderosas parte 1"
         
+        $scope.descricaoAngular2Parte2 = "Angular 2: webapps ainda mais poderosas parte 2"
+            
         $scope.descricaoEADHackatruck =     "EAD Hackatruck - Conceitos e Fundamentos SWIFT";
         
         $scope.descricaoHackatruck =        "Presencial Hackatruck Desenvolvimento SWIFT";
