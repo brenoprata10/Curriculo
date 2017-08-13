@@ -453,13 +453,13 @@ function($scope) {
         
         $scope.descricaoMicrocopy =         "Microcopy: a influência do micro copy na experiência do usuario";
             
-        $scope.descricaoJavascriptECMA6 = "JavaScript avançado I: ES6, orientação a objetos e padrões de projetos"
+        $scope.descricaoJavascriptECMA6 =   "JavaScript avançado I: ES6, orientação a objetos e padrões de projetos"
             
-        $scope.descricaoTypescript1 = "TypeScript parte 1: Evoluindo seu Javascript"
+        $scope.descricaoTypescript1 =       "TypeScript parte 1: Evoluindo seu Javascript"
             
-        $scope.descricaoAngular2Parte1 = "Angular 2: webapps ainda mais poderosas parte 1"
+        $scope.descricaoAngular2Parte1 =    "Angular 2: webapps ainda mais poderosas parte 1"
         
-        $scope.descricaoAngular2Parte2 = "Angular 2: webapps ainda mais poderosas parte 2"
+        $scope.descricaoAngular2Parte2 =    "Angular 2: webapps ainda mais poderosas parte 2"
             
         $scope.descricaoEADHackatruck =     "EAD Hackatruck - Conceitos e Fundamentos SWIFT";
         
