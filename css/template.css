@@ -65,6 +65,21 @@ html{
     
 }
 
+.cardTelainicial{
+    
+    color: white; 
+    
+}
+
+.divisor{ 
+    
+    background-color: #9C8AA5;
+    
+    visibility: visible;
+    
+    height: 7px;
+
+}
 
 .conteudo{
     
@@ -73,12 +88,6 @@ html{
     flex-direction: column;
     
     flex-wrap: wrap;
-    
-    color: darkslategray;
-    
-    background-color: white;
-    
-    border-radius: 20px;
     
 }
 
@@ -130,7 +139,7 @@ html{
 
 .subMenu{
     
-    color: dimgray;
+    color: white;
     
 }
 

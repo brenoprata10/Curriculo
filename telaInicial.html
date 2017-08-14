@@ -1,52 +1,52 @@
 <section class="row conteudoPrincipal" ng-init="carregarSlider()">
-            
+
     <div class="slider wow fadeIn">
         <ul class="slides">
             <li>
-                <img class="responsive-img" src="resources/cup-of-coffee-1280537_1280.jpg"> 
+                <img class="responsive-img" src="resources/cup-of-coffee-1280537_1280.jpg">
                 <div class="caption center-align">
-                  <h3>{{bemVindo}}</h3>
-                  <h5 class="light grey-text text-lighten-3">Breno Prata</h5>
-                  <i class="fa fa-angle-double-down fa-3x" aria-hidden="true"></i>
+                    <h3>{{bemVindo}}</h3>
+                    <h5 class="light grey-text text-lighten-3">Breno Prata</h5>
+                    <i class="fa fa-angle-double-down fa-3x" aria-hidden="true"></i>
                 </div>
             </li>
             <li>
-                <img class="responsive-img" src="resources/mountain-road-1556177_1920.jpg"> 
+                <img class="responsive-img" src="resources/mountain-road-1556177_1920.jpg">
                 <div class="caption left-align">
-                  <h3>{{resumo}}:</h3>
-                  <h5 class="light grey-text text-lighten-3">{{desenvolvedor}}</h5>
-                  <h5 class="light grey-text text-lighten-3">21 {{anos}}</h5>
-                  <h5 class="light grey-text text-lighten-3">{{cafe}}</h5>
-                  <h5 class="light grey-text text-lighten-3">{{apaixonadoHTML}}</h5>
+                    <h3>{{resumo}}:</h3>
+                    <h5 class="light grey-text text-lighten-3">{{desenvolvedor}}</h5>
+                    <h5 class="light grey-text text-lighten-3">21 {{anos}}</h5>
+                    <h5 class="light grey-text text-lighten-3">{{cafe}}</h5>
+                    <h5 class="light grey-text text-lighten-3">{{apaixonadoHTML}}</h5>
 
                 </div>
             </li>
             <li>
-                <img class="responsive-img" src="resources/phone-802125_1920.jpg"> 
+                <img class="responsive-img" src="resources/phone-802125_1920.jpg">
                 <div class="caption right-align">
-                  <h3 class="" ><strong>Responsive Design</strong></h3>
-                  <h5 class=""><strong>{{dica}}</strong></h5>
-                  <h5 class=""><strong>{{tenteMobile}}</strong></h5>
+                    <h3 class=""><strong>Responsive Design</strong></h3>
+                    <h5 class=""><strong>{{dica}}</strong></h5>
+                    <h5 class=""><strong>{{tenteMobile}}</strong></h5>
                 </div>
             </li>
             <li>
-                <img class="responsive-img" src="resources/email-marketing-2362038_1920.png"> 
+                <img class="responsive-img" src="resources/email-marketing-2362038_1920.png">
                 <div class="caption left-align">
-                  <h3 style="color:black">{{contatoSlider}}:</h3>
-                  <h5 class="" style="color:black">brenoprata10@gmail.com</h5>
+                    <h3 style="color:black">{{contatoSlider}}:</h3>
+                    <h5 class="" style="color:black">brenoprata10@gmail.com</h5>
                 </div>
             </li>
-            
+
         </ul>
     </div>
-    
-    <div class="conteudo col s12 offset-m1 m10 offset-m1 offset-l1 l10 offset-l1 wow fadeInUp" style="margin-top: 2%">
 
-        <h4><i class="fa fa-code fadeIn" aria-hidden="true"></i><strong> {{qualificacoes}}:</strong></h4>
+    <div class="wow fadeInUp" style="width:100%;margin-top:2%">
+
+        <div class="cardTelainicial wow fadeInLeft col s12 m12 l12" style="background-color:purple;width:100%">
 
             <h5 class="subMenu wow fadeInDown"><i class="fa fa-chevron-right" aria-hidden="true"></i><strong> {{linguagens}}:</strong></h5>
 
-            <ul class="listaQualificacoes" style="height:200px; margin-top:4% !important" >
+            <ul class="listaQualificacoes" style="height:200px; margin-top:4% !important">
 
                 <li class="itemLista wow fadeInLeft">
 
@@ -95,24 +95,30 @@
                     <span class="flow-text"><strong>-</strong> Javascript</span>
 
                 </li>
-                
+
                 <li class="itemLista wow fadeInLeft">
 
                     <span class="flow-text"><strong>-</strong> Typescript</span>
 
                 </li>
-                
+
                 <li class="itemLista wow fadeInLeft">
 
-<!--                    <span class="flow-text"><strong>-</strong> Typescript</span>-->
+                    <!--                    <span class="flow-text"><strong>-</strong> Typescript</span>-->
 
                 </li>
 
             </ul>
 
+        </div>
+        
+        <div class="divisor col s12 m12 l12"></div>
+
+        <div class="cardTelainicial wow fadeInRight col s12 m12 l12" style="background-color:#e52b2b;">
+
             <h5 class="subMenu wow fadeInDown"><i class="fa fa-chevron-right" aria-hidden="true"></i><strong> Frameworks:</strong></h5>
 
-            <ul class="listaQualificacoes" style="height:200px; margin-top:4%" >
+            <ul class="listaQualificacoes" style="height:200px; margin-top:4%">
 
                 <li class="itemLista wow fadeInLeft">
 
@@ -164,9 +170,15 @@
 
             </ul>
 
+        </div>
+        
+        <div class="divisor col s12 m12 l12"></div>
+
+        <div class="cardTelainicial wow fadeInLeft col s12 m12 l12" style="background-color:#e52b2b;">
+
             <h5 class="subMenu wow fadeInDown"><i class="fa fa-chevron-right" aria-hidden="true"></i><strong> {{versionamento}}:</strong></h5>
 
-            <ul class="listaQualificacoes" style="height:50px; margin-top:4%" >
+            <ul class="listaQualificacoes" style="height:50px; margin-top:4%">
 
                 <li class="itemLista wow fadeInLeft">
 
@@ -182,9 +194,15 @@
 
             </ul>
 
+        </div>
+        
+        <div class="divisor col s12 m12 l12"></div>
+
+        <div class="cardTelainicial wow fadeInRight col s12 m12 l12" style="background-color:#e52b2b;">
+
             <h5 class="subMenu wow fadeInDown"><i class="fa fa-chevron-right" aria-hidden="true"></i><strong> {{tecnologias}}:</strong></h5>
 
-            <ul class="listaQualificacoes" style="height:200px; margin-top:4%" >
+            <ul class="listaQualificacoes" style="height:200px; margin-top:4%">
 
                 <li class="itemLista wow fadeInLeft">
 
@@ -221,13 +239,13 @@
                     <span class="flow-text"><strong>- </strong> JBOSS</span>
 
                 </li>
-                
+
                 <li class="itemLista wow fadeInLeft">
 
                     <span class="flow-text"><strong>- </strong> PostgreSQL</span>
 
                 </li>
-                
+
                 <li class="itemLista wow fadeInRight">
 
                     <span class="flow-text"><strong>- </strong> Jenkins</span>
@@ -236,9 +254,15 @@
 
             </ul>
 
+        </div>
+        
+        <div class="divisor col s12 m12 l12"></div>
+
+        <div class="cardTelainicial wow fadeInLeft col s12 m12 l12" style="background-color:#e52b2b;">
+
             <h5 class="subMenu wow fadeInDown"><i class="fa fa-chevron-right" aria-hidden="true"></i><strong> {{teste}}:</strong></h5>
 
-            <ul class="listaQualificacoes" style="height:50px; margin-top:4%" >
+            <ul class="listaQualificacoes" style="height:50px; margin-top:4%">
 
                 <li class="itemLista wow fadeInLeft">
 
@@ -254,9 +278,15 @@
 
             </ul>
 
+        </div>
+        
+        <div class="divisor col s12 m12 l12"></div>
+
+        <div class="cardTelainicial wow fadeInRight col s12 m12 l12" style="background-color:#e52b2b;">
+
             <h5 class="subMenu wow fadeInDown"><i class="fa fa-chevron-right" aria-hidden="true"></i><strong> Design:</strong></h5>
 
-            <ul class="listaQualificacoes" style="height:110px; margin-top:4%" >
+            <ul class="listaQualificacoes" style="height:110px; margin-top:4%">
 
                 <li class="itemLista wow fadeInLeft">
 
@@ -284,9 +314,15 @@
 
             </ul>
 
+        </div>
+        
+        <div class="divisor col s12 m12 l12"></div>
+
+        <div class="cardTelainicial wow fadeInLeft col s12 m12 l12" style="background-color:#e52b2b;">
+
             <h5 class="subMenu wow fadeInDown"><i class="fa fa-chevron-right" aria-hidden="true"></i><strong> {{ferramentas}}:</strong></h5>
 
-            <ul class="listaQualificacoes" style="height:130px; margin-top:4%" >
+            <ul class="listaQualificacoes" style="height:130px; margin-top:4%">
 
                 <li class="itemLista wow fadeInLeft">
 
@@ -311,13 +347,13 @@
                     <span class="flow-text"><strong>-</strong> Jira</span>
 
                 </li>
-                
+
                 <li class="itemLista wow fadeInLeft">
 
                     <span class="flow-text"><strong>-</strong> Cloud 9</span>
 
                 </li>
-                
+
                 <li class="itemLista wow fadeInRight">
 
                     <span class="flow-text" style="white-space:nowrap"><strong>-</strong> Visual Studio Code</span>
@@ -325,10 +361,16 @@
                 </li>
 
             </ul>
+
+        </div>
         
+        <div class="divisor col s12 m12 l12"></div>
+
+        <div class="cardTelainicial wow fadeInRight col s12 m12 l12" style="background-color:#e52b2b;">
+
             <h5 class="subMenu wow fadeInDown"><i class="fa fa-chevron-right" aria-hidden="true"></i><strong> {{idiomas}}:</strong></h5>
 
-            <ul class="listaQualificacoes" style="height:130px; margin-top:4%" >
+            <ul class="listaQualificacoes" style="height:130px; margin-top:4%">
 
                 <li class="itemLista wow fadeInLeft">
 
@@ -355,6 +397,8 @@
                 </li>
 
             </ul>
+
+        </div>
 
     </div>
 
