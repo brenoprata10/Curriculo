@@ -68,6 +68,9 @@ html{
 .cardTelainicial{
     
     color: white; 
+    width:100%;
+    background-repeat:no-repeat;
+    background-size:100%
     
 }
 
@@ -77,7 +80,7 @@ html{
     
     visibility: visible;
     
-    height: 7px;
+    height: 3px;
 
 }
 
@@ -142,6 +145,19 @@ html{
     color: white;
     
 }
+
+.alinharSubMenu{
+    
+    display: flex;
+    
+    justify-content: center;
+    
+    padding-top: 9% !important;
+    padding-bottom: 8% !important;
+    padding-left: 0%;
+    margin-left: -1% !important;
+    
+} 
 
 .conteudoPrincipal{
     
