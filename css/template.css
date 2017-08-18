@@ -1,356 +1,218 @@
-html{
-    
+html {
     background-color: #e9ebee;
-    
     background-repeat: no-repeat;
-    
     text-align: justify;
-    
     line-height: 10%;
-    
 }
 
-.iconeMenu{
-    
-    margin-left: -5%; 
+.iconeMenu {
+    margin-left: -5%;
     margin-right: 5%;
-    
 }
 
 .imagemCertificados:hover {
-    
     cursor: pointer!important;
-    
 }
 
-.iconeLista{
-    
-    margin-left: -1%; 
+.iconeLista {
+    margin-left: -1%;
     margin-right: 1%;
 }
 
-.corComponentesPrincipais{
-    
+.corComponentesPrincipais {
     background-color: #6f6bf7;
-    
 }
 
-.logo{
-    
-    margin-left: 1.5% ;
-    
+.logo {
+    margin-left: 1.5%;
 }
 
-.brand-logo:hover{
-    
+.brand-logo:hover {
     transition: 0.4s;
-        
     transition-timing-function: ease-in-out;
-    
     -webkit-transition: 0.4s;
-        
     -webkit-transition-timing-function: ease-in-out;
-    
 }
 
-.brand-logo{
-    
+.brand-logo {
     transition: 0.4s;
-        
     transition-timing-function: ease-in-out;
-    
     -webkit-transition: 0.4s;
-        
     -webkit-transition-timing-function: ease-in-out;
-    
 }
 
-.cardTelainicial{
-    
-    color: white; 
-    width:100%;
-    background-repeat:no-repeat;
-    background-size:100%
-    
-}
-
-.divisor{ 
-    
-    background-color: #9C8AA5;
-    
-    visibility: visible;
-    
-    height: 3px;
-
-}
-
-.conteudo{
-    
-    display:flex;
-    
+.cardTelainicial {
+    color: white;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 170%;
+    display: flex;
     flex-direction: column;
-    
     flex-wrap: wrap;
-    
+}
+
+.divisor {
+    background-color: #9C8AA5;
+    visibility: visible;
+    height: 3px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .listaQualificacoes {
-    
-    display:flex;
-    
+    display: flex;
     flex-wrap: wrap;
-    
-    justify-content: space-around;
-    
+    justify-content: flex-end;
+
     width: 100%;
-    
 }
 
-.itemLista{
-    
-    width: 47%;
-    
+.itemLista {
+    width: 35%;
 }
 
-.painelLateral{
-    
+.painelLateral {
     color: white;
-    
     display: flex;
-    
     flex-direction: column;
-    
     align-items: center;
-    
     background-color: #2196F3;
-    
     box-shadow: 1px 1px 3px #888888;
-    
     border-radius: 20px;
-    
 }
 
-.fotoPerfil{
-    
+.fotoPerfil {
     margin-top: 5%;
-    
     border-radius: 50%;
-    
     width: 55%;
-    
 }
 
-.subMenu{
-    
+.subMenu {
     color: white;
-    
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
 }
 
-.alinharSubMenu{
-    
+.alinharSubMenu {
     display: flex;
-    
     justify-content: center;
-    
     padding-top: 9% !important;
     padding-bottom: 8% !important;
     padding-left: 0%;
     margin-left: -1% !important;
-    
-} 
-
-.conteudoPrincipal{
-    
-
-    
 }
 
-.parallax{
-    
-    position:static;
-    
+.conteudoPrincipal {}
+
+.parallax {
+    position: static;
 }
 
-.campoCursos{
-    
+.campoCursos {
     display: flex;
-    
     flex-wrap: wrap;
-    
     flex-direction: row;
-    
     justify-content: space-around;
-    
     background-attachment: fixed;
-    
     background-color: #e9ebee;
-    
-    border-radius:16px;
-    
+    border-radius: 16px;
     width: 100%;
-    
 }
 
-.cartaoCurso{
-    
+.cartaoCurso {
     display: flex;
-    
     flex-direction: column;
-    
     justify-content: flex-end;
-    
-    border-radius:10px;
-    
+    border-radius: 10px;
     width: 30%;
-    
     height: 320px;
-    
-    
 }
 
-.imagemCurso{
-    
-    height:180px;
-    
+.imagemCurso {
+    height: 180px;
 }
 
-.imagemFooter{
-    
-    height:100px;
-    
-    float:left;
-    
+.imagemFooter {
+    height: 100px;
+    float: left;
 }
 
-.slider .indicators .indicator-item{
-    
+.slider .indicators .indicator-item {
     background-color: #6f6bf7;
-    
 }
 
-.slider .indicators .indicator-item.active{
-    
+.slider .indicators .indicator-item.active {
     background-color: darkseagreen;
-    
 }
 
-.linhaInferior{
-    
+.linhaInferior {
     opacity: 0;
-    
     background-color: white;
-    
     position: absolute;
-    
     bottom: 0;
-    
     left: 0;
-    
     overflow: hidden;
-    
     width: 0;
-    
     height: 6%;
-    
     transition: 0.4s;
-        
     transition-timing-function: ease-in-out;
-    
     -webkit-transition: 0.4s;
-        
     -webkit-transition-timing-function: ease-in-out;
-    
 }
 
-.itemLinhaInferior:hover .linhaInferior{
-    
+.itemLinhaInferior:hover .linhaInferior {
     width: 100%;
-    
     opacity: 1;
-    
 }
 
-.itemLinhaInferior{
-    
+.itemLinhaInferior {
     position: relative;
-    
 }
 
-.camposFooter{
-
-   display:flex;
-
-   width:100%;
-
-   flex-wrap:wrap;
-
-   justify-content:space-around;
-
-   flex-direction:row;
-
-}
-
-.larguraCamposFooter{
-        
-    width: 25%;
-
-}
-
-@media(max-width: 992px){
-    
-    .menuMobile{
-        
-        position: fixed;
-        
-        z-index: 150;
-        
-    }
-    
-    .cartaoCurso{
-    
+.camposFooter {
     display: flex;
-    
-    flex-direction: column;
-    
-    border-radius:10px;
-    
-    width: 90%;
-    
-    height: 350px;
-    
-    }
-    
-    .cartaoCurso:first-child{
-        
-    margin-top:4%;
-    
-    }
-    
-    .cartaoCurso:last-child,
-    .ultimoCard{
-        
-    margin-bottom:5%;
-    
-    }
-    
-    .parallax-container{
-        
-        max-height: 350px;
-        
-    }
-    
-    .larguraCamposFooter{
-        
-        margin-top: 3%;
-        
-        width: 100%;
-        
-    }
-    
-    .imagemFooter{
-        
-        float:none;
-        
-    }
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
 
+.larguraCamposFooter {
+    width: 25%;
+}
+
+@media(max-width: 992px) {
+    .menuMobile {
+        position: fixed;
+        z-index: 150;
+    }
+    .cartaoCurso {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        width: 90%;
+        height: 350px;
+    }
+    .cartaoCurso:first-child {
+        margin-top: 4%;
+    }
+    .cartaoCurso:last-child,
+    .ultimoCard {
+        margin-bottom: 5%;
+    }
+    .parallax-container {
+        max-height: 350px;
+    }
+    .larguraCamposFooter {
+        margin-top: 3%;
+        width: 100%;
+    }
+    .imagemFooter {
+        float: none;
+    }
 }
