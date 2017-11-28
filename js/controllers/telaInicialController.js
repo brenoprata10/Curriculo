@@ -191,7 +191,7 @@ function($scope) {
         
         $scope.sisgepiTooltip =             "Intellectual Property Management System";
             
-        $scope.desenvolvedor =              "Junior Developer";
+        $scope.desenvolvedor =              "Full Developer";
         
         /*---------------------------- Experiencias -------------------------------*/
         
@@ -272,6 +272,8 @@ function($scope) {
         /*---------------------------- Contato ------------------------------------*/
         
         $scope.redesSociais =               "Social Media";
+
+        $scope.codigo =                     "Coding";
         
         /*---------------------------- Contato ------------------------------------*/
         
@@ -388,7 +390,7 @@ function($scope) {
         
         $scope.projetos =                   "Projetos";
             
-        $scope.desenvolvedor =              "Desenvolvedor Júnior";
+        $scope.desenvolvedor =              "Desenvolvedor Pleno";
         
         
         /*---------------------------- Experiencias -------------------------------*/
@@ -470,6 +472,8 @@ function($scope) {
         /*---------------------------- Contato ------------------------------------*/
         
         $scope.redesSociais =               "Redes Sociais";
+
+        $scope.codigo =                     "Código";
         
         /*---------------------------- Contato ------------------------------------*/
         
