@@ -490,8 +490,201 @@ function($scope) {
     }
     
     function idiomaEspanhol(){
-        
-        $scope.logo = "Curriculum ES - Breno Prata";     
+
+        if($scope.inicio == "Inicio "){
+
+            return;
+
+        }else{
+
+            if($scope.inicio != undefined){
+
+                var $toastContent = $('<span class="valign-wrapper"><img style="height:40px;" src="resources/spain.png">&nbsp&nbsp Espanhol</span>');
+
+                Materialize.toast($toastContent, 1600, 'rounded');
+
+            }
+
+            /*---------------------------- Menu ---------------------------------------*/
+
+            $scope.inicio =                     "Inicio ";
+
+            $scope.logo =                       "Currículo - Breno Prata";
+
+            $scope.experienciaMenu =            "Experiencia";
+
+            $scope.formacao =                   "Formación";
+
+            $scope.certificados =               "Certificados";
+
+            $scope.contato =                    "Contacto";
+
+            /*---------------------------- Menu ---------------------------------------*/
+
+            /*---------------------------- Slider -------------------------------------*/
+
+            $scope.desenvolvedor =              "Desarrollador Web";
+
+            $scope.bemVindo =                   "Bienvenido a Mi Currículum!";
+
+            $scope.anos =                       "Años";
+
+            $scope.resumo =                     "Resumen";
+
+            $scope.cafe =                       "Adora café";
+
+            $scope.apaixonadoHTML =             "Enamorado de HTML";
+
+            $scope.dica =                       "¿Quieres una sugerencia?";
+
+            $scope.tenteMobile =                "Intenta usar este sitio en el móvil!";
+
+            $scope.contatoSlider =              "Entre en contacto";
+
+            /*---------------------------- Slider -------------------------------------*/
+
+            /*---------------------------- Tela Inicial -------------------------------*/
+
+            $scope.qualificacoes =              "Calificaciones";
+
+            $scope.linguagens =                 "Lenguajes";
+
+            $scope.basico =                     "Básico";
+
+            $scope.versionamento =              "Versionamento";
+
+            $scope.tecnologias =                "Tecnologías";
+
+            $scope.teste =                      "Teste";
+
+            $scope.ferramentas =                "Herramientas";
+
+            $scope.idiomas =                    "Idiomas";
+
+            $scope.portugues =                  "Português";
+
+            $scope.ingles =                     "Inglês";
+
+            $scope.espanhol =                   "Espanhol";
+
+            /*---------------------------- Tela Inicial -------------------------------*/
+
+            /*---------------------------- Experiencias -------------------------------*/
+
+            $scope.informatica =                "Informática";
+
+            $scope.periodo =                    "Período";
+
+            $scope.ate =                        "hasta";
+
+            $scope.cargo =                      "Cargo";
+
+            $scope.estagiario =                 "Becario";
+
+            $scope.desenvolvimento =            "Desarrollo";
+
+            $scope.area =                       "Área";
+
+            $scope.participacoes =              "Contribuciones";
+
+            $scope.projetos =                   "Proyectos";
+
+            $scope.desenvolvedor =              "Desarrollador Pleno";
+
+
+            /*---------------------------- Experiencias -------------------------------*/
+
+            /*---------------------------- Formacao -----------------------------------*/
+
+            $scope.catolica =                   "Universidad Católica de Brasília";
+
+            $scope.curso =                      "Curso";
+
+            $scope.sistemasInformacao =         "Sistemas de la Información";
+
+            $scope.semestre =                   "Semestre";
+
+            /*---------------------------- Formacao -----------------------------------*/
+
+            /*---------------------------- Certificados -------------------------------*/
+
+            $scope.cursos =                     "Cursos";
+
+            $scope.certificado =                "Certificado";
+
+            $scope.descricaoAngular =           "crea webapps poderosas";
+
+            $scope.descricaoUnity =             "Juegos móviles con Unity: Diversión con Game Engine";
+
+            $scope.descricaoJava8 =             "Java 8: Aproveche los nuevos recursos del lenguaje";
+
+            $scope.descricaoTesteTDD =          "Testes: TDD con Java";
+
+            $scope.descricaoSelenium =          "Selenium: Su webapp probada de extremo a extremo en java";
+
+            $scope.descricaoDesignPatternsJava1="Design Patterns Java I: Buenas prácticas de programación";
+
+            $scope.descricaoWebHTML1 =          "HTML5 y CSS3 I: sus primeras páginas web";
+
+            $scope.descricaoWebHTML2 =          "HTML5 y CSS3 II: Turbinando sus páginas";
+
+            $scope.descricaoLinguagemcSharp =   "C# I: Fundamentos del lenguaje";
+
+            $scope.descricaoLinguagemPHP =      "PHP y MySQL I: Fundamentos para crear un sistema en la Web";
+
+            $scope.descricaoJavascript =        "JavaScript: Programando en el lenguaje de la web";
+
+            $scope.descricaoFlexbox =           "Flexbox: Coloque elementos en la pantalla";
+
+            $scope.descricaoUX1 =               "UX: lo que es experiencia de usuario";
+
+            $scope.descricaoUX2 =               "UX Strategy: divergiendo y hundiendo ideas";
+
+            $scope.descricaoUX3 =               "UX Usabilidad: facilite la vida de su usuario en el móvil";
+
+            $scope.descricaoUX4 =               "UX Research: Comience a entender a su usuario";
+
+            $scope.descricaoUX5 =               "UX Producto: monitoree, muestre y pruebe su proyecto";
+
+            $scope.descricaoUXMyths =           "UX Mitos: Los errores frecuentes de usabilidad y las buenas prácticas";
+
+            $scope.descricaoLess =              "LESS: CSS simple y productivo";
+
+            $scope.descricaoIconografia =       "Curso Iconografía I: desarrolle representaciones gráficas a partir de una identidad";
+
+            $scope.descricaoMicrocopy =         "Microcopy: la influencia del micro copy en la experiencia del usuario";
+
+            $scope.descricaoJavascriptECMA6 =   "JavaScript avanzado I: ES6, orientación a objetos y patrones de proyectos"
+
+            $scope.descricaoTypescript1 =       "TypeScript parte 1: Evolución de su Javascript"
+
+            $scope.descricaoAngular2Parte1 =    "Angular 2: webapps aún más poderosos parte 1"
+
+            $scope.descricaoAngular2Parte2 =    "Angular 2: webapps aún más poderosos parte 2"
+
+            $scope.descricaoEADHackatruck =     "EAD Hackatruck - Conceptos y Fundamentos SWIFT";
+
+            $scope.descricaoHackatruck =        "Presencial Hackatruck Desarrollo SWIFT";
+
+            /*---------------------------- Certificados -------------------------------*/
+
+            /*---------------------------- Contato ------------------------------------*/
+
+            $scope.redesSociais =               "Redes Sociais";
+
+            $scope.codigo =                     "Código";
+
+            /*---------------------------- Contato ------------------------------------*/
+
+            /*---------------------------- Footer -------------------------------------*/
+
+            $scope.footer =                     "Desarrollado con";
+
+            $scope.footer2 =                    "© 2017 Creado y Desarrollado por Breno Plata";
+
+            /*---------------------------- Footer -------------------------------------*/
+
+        }
         
     }
     
