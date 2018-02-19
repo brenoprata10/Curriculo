@@ -213,7 +213,7 @@ function($scope) {
         
         $scope.certificado =                "Certificate";
         
-        $scope.descricaoAngular =           "build powerful webapps";
+        $scope.descricaoAngular =           "Build powerful webapps";
         
         $scope.descricaoUnity =             "Mobile Games with Unity: Fun with the Game Engine";
         
@@ -257,11 +257,15 @@ function($scope) {
             
         $scope.descricaoJavascriptECMA6 =   "Advanced JavaScript I: ES6, Object Orientation, and Project Patterns";
             
-        $scope.descricaoTypescript1 =       "TypeScript part 1: Evolving your Javascript"
+        $scope.descricaoTypescript1 =       "TypeScript part 1: Evolving your Javascript";
             
-        $scope.descricaoAngular2Parte1 =    "Angular 2: webapps even more powerful part 1"
+        $scope.descricaoAngular2Parte1 =    "Angular 2: webapps even more powerful part 1";
             
-        $scope.descricaoAngular2Parte2 =    "Angular 2: webapps even more powerful part 2"
+        $scope.descricaoAngular2Parte2 =    "Angular 2: webapps even more powerful part 2";
+
+        $scope.descricaoIonic2Parte1 =      "Ionic 2 part 1: Mobile hybrid applications even more powerful";
+
+        $scope.descricaoIonic2Parte2 =      "Ionic 2 part 2: Mobile hybrid applications even more powerful";
         
         $scope.descricaoEADHackatruck =     "EAD Hackatruck - Concepts and Fundamentals SWIFT";
         
@@ -413,7 +417,7 @@ function($scope) {
         
         $scope.certificado =                "Certificado";
         
-        $scope.descricaoAngular =           "crie webapps poderosas";
+        $scope.descricaoAngular =           "Crie webapps poderosas";
         
         $scope.descricaoUnity =             "Jogos mobile com Unity: Diversão com a Game Engine";
         
@@ -457,11 +461,15 @@ function($scope) {
             
         $scope.descricaoJavascriptECMA6 =   "JavaScript avançado I: ES6, orientação a objetos e padrões de projetos"
             
-        $scope.descricaoTypescript1 =       "TypeScript parte 1: Evoluindo seu Javascript"
+        $scope.descricaoTypescript1 =       "TypeScript parte 1: Evoluindo seu Javascript";
             
-        $scope.descricaoAngular2Parte1 =    "Angular 2: webapps ainda mais poderosas parte 1"
+        $scope.descricaoAngular2Parte1 =    "Angular 2: webapps ainda mais poderosas parte 1";
         
-        $scope.descricaoAngular2Parte2 =    "Angular 2: webapps ainda mais poderosas parte 2"
+        $scope.descricaoAngular2Parte2 =    "Angular 2: webapps ainda mais poderosas parte 2";
+
+        $scope.descricaoIonic2Parte1 =      "Ionic 2 parte 1: Aplicações híbridas mobile ainda mais poderosas";
+
+        $scope.descricaoIonic2Parte2 =      "Ionic 2 parte 2: Aplicações híbridas mobile ainda mais poderosas";
             
         $scope.descricaoEADHackatruck =     "EAD Hackatruck - Conceitos e Fundamentos SWIFT";
         
@@ -612,7 +620,7 @@ function($scope) {
 
             $scope.certificado =                "Certificado";
 
-            $scope.descricaoAngular =           "crea webapps poderosas";
+            $scope.descricaoAngular =           "Crea webapps poderosas";
 
             $scope.descricaoUnity =             "Juegos móviles con Unity: Diversión con Game Engine";
 
@@ -656,11 +664,15 @@ function($scope) {
 
             $scope.descricaoJavascriptECMA6 =   "JavaScript avanzado I: ES6, orientación a objetos y patrones de proyectos"
 
-            $scope.descricaoTypescript1 =       "TypeScript parte 1: Evolución de su Javascript"
+            $scope.descricaoTypescript1 =       "TypeScript parte 1: Evolución de su Javascript";
 
-            $scope.descricaoAngular2Parte1 =    "Angular 2: webapps aún más poderosos parte 1"
+            $scope.descricaoAngular2Parte1 =    "Angular 2: webapps aún más poderosos parte 1";
 
-            $scope.descricaoAngular2Parte2 =    "Angular 2: webapps aún más poderosos parte 2"
+            $scope.descricaoAngular2Parte2 =    "Angular 2: webapps aún más poderosos parte 2";
+
+            $scope.descricaoIonic2Parte1 =      "Ionic 2 parte 1: Aplicaciones híbridas móviles aún más poderosas";
+
+            $scope.descricaoIonic2Parte2 =      "Ionic 2 parte 2: Aplicaciones híbridas móviles aún más poderosas";
 
             $scope.descricaoEADHackatruck =     "EAD Hackatruck - Conceptos y Fundamentos SWIFT";
 
