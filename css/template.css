@@ -5,6 +5,10 @@ html {
     line-height: 10%;
 }
 
+.side-nav {
+    padding-top: 50px;
+}
+
 .ng-view {
     padding-top: 50px;
 }
