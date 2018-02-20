@@ -285,7 +285,7 @@ function($scope) {
         
         $scope.footer =                     "Created with";
         
-        $scope.footer2 =                    "© 2017 Created and Developed by Breno Prata";
+        $scope.footer2 =                    "© 2018 Created and Developed by Breno Prata";
         
         /*---------------------------- Footer -------------------------------------*/
             
@@ -489,7 +489,7 @@ function($scope) {
         
         $scope.footer =                     "Desenvolvido com";
         
-        $scope.footer2 =                    "© 2017 Criado e Desenvolvido por Breno Prata";
+        $scope.footer2 =                    "© 2018 Criado e Desenvolvido por Breno Prata";
         
         /*---------------------------- Footer -------------------------------------*/
             
@@ -692,7 +692,7 @@ function($scope) {
 
             $scope.footer =                     "Desarrollado con";
 
-            $scope.footer2 =                    "© 2017 Creado y Desarrollado por Breno Plata";
+            $scope.footer2 =                    "© 2018 Creado y Desarrollado por Breno Plata";
 
             /*---------------------------- Footer -------------------------------------*/
 

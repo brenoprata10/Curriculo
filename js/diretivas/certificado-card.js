@@ -17,7 +17,6 @@ app.directive("certificadoCard", function () {
 
         link: function($scope) {
             $scope.abrirCertificado = function(urlcertificado) {
-                console.log(urlcertificado);
                 window.open(urlcertificado.toString());
             }
         }
