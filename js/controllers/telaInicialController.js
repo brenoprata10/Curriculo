@@ -72,16 +72,8 @@ function($scope) {
     }
     
     function carregarTela(){
-        
+
         idiomaPortugues();
-        
-        $(document).ready(function(){
-            $('.parallax').parallax();
-        });
-        
-        $(document).ready(function(){
-            $('.tooltipped').tooltip({delay: 50});
-        });
         
         $(".drag-target").on("swipeleft", function () {
               $("#sidenav-overlay").trigger("click");
@@ -89,6 +81,11 @@ function($scope) {
         
         $(document).ready(function(){
             $('.slider').slider();
+            $('.parallax').parallax();
+            $('.tooltipped').tooltip({delay: 50});
+            $(document).on('click', '.itemLinhaInferior', function () {
+                window.scrollTo(0,0);
+            });
         });
                 
     }
