@@ -48,8 +48,6 @@ html {
 .cardTelainicial {
     color: white;
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: 170%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -191,6 +189,9 @@ html {
 }
 
 @media(max-width: 992px) {
+    .ng-view {
+        padding-top: 50px;
+    }
     .menuMobile {
         position: fixed;
         z-index: 150;
