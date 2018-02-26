@@ -73,8 +73,22 @@ function($scope) {
     
     function carregarTela(){
 
-        idiomaPortugues();
-        
+        var userLang = navigator.language || navigator.userLanguage;
+
+        switch(userLang.substr(0,2)) {
+            case 'en':
+                idiomaIngles();
+                break;
+            case 'pt':
+                idiomaPortugues();
+                break;
+            case 'es':
+                idiomaEspanhol();
+                break;
+            default:
+                idiomaPortugues();
+        }
+
         $(".drag-target").on("swipeleft", function () {
               $("#sidenav-overlay").trigger("click");
             });
@@ -110,7 +124,7 @@ function($scope) {
         
         $scope.experienciaMenu =            "Experience";
         
-        $scope.formacao =                   "Formation";
+        $scope.formacao =                   "Education";
         
         $scope.certificados =               "Certificates";
         
@@ -176,7 +190,7 @@ function($scope) {
         
         $scope.cargo =                      "Function";
         
-        $scope.estagiario =                 "Trainee";
+        $scope.estagiario =                 "Intern";
         
         $scope.desenvolvimento =            "Development";
         
