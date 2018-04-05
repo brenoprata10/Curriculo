@@ -46,6 +46,10 @@ function($scope) {
         });
         
     }
+
+    $scope.abrirCurriculo = function () {
+        window.open('resources/Curriculo-BrenoPrata.pdf');
+    }
     
     $scope.carregarParallax = function (){
         
@@ -100,6 +104,10 @@ function($scope) {
             $(document).on('click', '.itemLinhaInferior', function () {
                 window.scrollTo(0,0);
             });
+        });
+
+        $(document).ready(function(){
+            $('.fixed-action-btn').floatingActionButton();
         });
                 
     }

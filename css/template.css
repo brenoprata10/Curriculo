@@ -27,6 +27,10 @@ html {
     background-color: #2b4075;
 }
 
+.fixed-action-btn ul {
+    bottom: 80px !important;
+}
+
 .logo {
     margin-left: 1.5%;
 }
