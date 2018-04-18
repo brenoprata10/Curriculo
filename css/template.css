@@ -149,7 +149,7 @@ html {
 }
 
 .slider .indicators .indicator-item {
-    background-color: #6f6bf7;
+    visibility: hidden !important;
 }
 
 .slider .indicators .indicator-item.active {
@@ -175,6 +175,8 @@ html {
     width: 100%;
     opacity: 1;
 }
+
+
 
 .itemLinhaInferior {
     position: relative;
