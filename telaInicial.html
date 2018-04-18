@@ -1,19 +1,14 @@
 <section class="conteudoPrincipal" ng-init="carregarSlider()">
 
-    <div class="slider">
-        <ul class="slides">
-            <li>
-                <img class="responsive-img" src="resources/cafe.webp">
-                <div class="caption center-align">
-                    <h3>{{bemVindo}}</h3>
-                    <h5 class="light grey-text text-lighten-3">Breno Prata</h5>
-                    <i class="fa fa-angle-double-down fa-3x" aria-hidden="true"></i>
-                </div>
-            </li>
-        </ul>
-    </div>
-
     <div class="" style="width:100%;margin-top: -40px;background-image:url('resources/backgroundCard.svg');background-size:100%; background-attachment: fixed;">
+
+        <div id="particles-js">
+            <div>
+                <h3 class="bem-vindo-label">{{bemVindo}}</h3>
+                <h5 class="light grey-text text-lighten-3">Breno Prata</h5>
+                <i class="fa fa-angle-double-down fa-3x" aria-hidden="true"></i>
+            </div>
+        </div>
 
         <div class="divisor col s12 m12 l12"></div>
         <div class="divisor col s12 m12 l12"></div>
@@ -412,3 +407,9 @@
     </div>
 
 </section>
+
+<script>
+    particlesJS.load('particles-js', 'resources/particles.json', function() {
+        console.log('callback - particles.js config loaded');
+    });
+</script>

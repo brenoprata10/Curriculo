@@ -171,6 +171,22 @@ html {
     -webkit-transition-timing-function: ease-in-out;
 }
 
+#particles-js {
+    background-color: #2b4075;
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+}
+
+#particles-js div {
+    text-align: center;
+    position: absolute;
+    top: 150px;
+}
+
+
 .itemLinhaInferior:hover .linhaInferior {
     width: 100%;
     opacity: 1;
@@ -225,5 +241,8 @@ html {
     }
     .imagemFooter {
         float: none;
+    }
+    .bem-vindo-label {
+        font-size: 1.6rem;
     }
 }
