@@ -3,9 +3,13 @@ app.controller('TelaInicialCtrl',
 function($scope) {           
     
     carregarTela();
+
+    $scope.timeouts = [];
     
     $scope.idiomaIngles = function (){
-        
+
+        limparTimeouts();
+
         idiomaIngles();
 
         animarLabelBemVindo();
@@ -13,7 +17,9 @@ function($scope) {
     }
     
     $scope.idiomaPortugues = function (){
-        
+
+        limparTimeouts();
+
         idiomaPortugues();
 
         animarLabelBemVindo();
@@ -21,7 +27,9 @@ function($scope) {
     }
     
     $scope.idiomaEspanhol = function (){
-        
+
+        limparTimeouts();
+
         idiomaEspanhol();
 
         animarLabelBemVindo();
@@ -149,42 +157,50 @@ function($scope) {
         var totalCaracteres = labelContrucao.split('').length * 75;
         label.innerHTML = '';
         executarAnimacao(label, labelContrucao);
-        setTimeout(() => {
+        $scope.timeouts.push(setTimeout(() => {
         escreverPalavras($scope.bemVindoSegundaParte, labelContrucao, label, totalCaracteres, totalCaracteres);
         escreverPalavras($scope.bemVindoTerceiraParte, labelContrucao, label, totalCaracteres + 4500, totalCaracteres);
-        }, totalCaracteres);
+        }, totalCaracteres));
     }
 
     function escreverPalavras (palavra, labelContrucao, label, tempoDelecao, tempoInserir) {
-        setTimeout(() => {
+        $scope.timeouts.push(setTimeout(() => {
             console.log('Entrei');
             animacaoApagarOrdenado(label);
-            setTimeout(() => {
+            $scope.timeouts.push(setTimeout(() => {
                 labelContrucao = ` ${palavra}`;
                 executarAnimacao(label, labelContrucao);
-            }, tempoInserir);
-        }, tempoDelecao);
+            }, tempoInserir));
+        }, tempoDelecao));
     }
 
     function animacaoApagarOrdenado(label) {
         var arrayPalavras = label.innerHTML.split(' ');
         var arrayLimiteDelecao = `${arrayPalavras[0]} ${arrayPalavras[1]}`;
         label.innerHTML.split('').forEach((character, cont)=> {
-            setTimeout(() => {
+            $scope.timeouts.push(setTimeout(() => {
                 if (arrayLimiteDelecao.length === label.innerHTML.length) {
                     return;
                 }
                 label.innerHTML = label.innerHTML.split('').splice(0, label.innerHTML.length - 1).join('');
-            }, 75 * cont);
+            }, 75 * cont));
         })
     }
 
     function executarAnimacao(label, labelContrucao) {
         labelContrucao.split('').forEach((character, i) => {
-            setTimeout(() => {
+            $scope.timeouts.push(setTimeout(() => {
                 label.innerHTML = label.innerHTML + labelContrucao[i];
-            }, 75 * i);
+            }, 75 * i));
         });
+    }
+
+    function limparTimeouts() {
+        for (var i = 0; i < 500; i++) {
+            clearTimeout(i);
+        }
+
+        document.getElementById('bem-vindo').innerHTML = '';
     }
     
     function idiomaIngles(){
