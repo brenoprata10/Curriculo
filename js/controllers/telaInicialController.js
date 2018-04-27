@@ -7,18 +7,24 @@ function($scope) {
     $scope.idiomaIngles = function (){
         
         idiomaIngles();
+
+        animarLabelBemVindo();
         
     }
     
     $scope.idiomaPortugues = function (){
         
         idiomaPortugues();
+
+        animarLabelBemVindo();
         
     }
     
     $scope.idiomaEspanhol = function (){
         
         idiomaEspanhol();
+
+        animarLabelBemVindo();
         
     }
     
@@ -39,12 +45,13 @@ function($scope) {
             
     }
     
-    $scope.carregarSlider = function (){
+    $scope.carregarComponentes = function (){
         
         $(document).ready(function(){
             $('.slider').slider();
         });
-        
+
+        animarLabelBemVindo();
     }
 
     $scope.abrirCurriculo = function () {
@@ -109,11 +116,79 @@ function($scope) {
         $(document).ready(function(){
             $('.fixed-action-btn').floatingActionButton();
         });
-                
+
+    }
+
+    // function animarLabelBemVindo() {
+    //     var label = document.getElementById("bem-vindo");
+    //     var labelContrucao = $scope.bemVindo;
+    //     var totalCaracteres = labelContrucao.split('').length * 75;
+    //     label.innerHTML = '';
+    //     executarAnimacao(label, labelContrucao);
+    //     setTimeout(() => {
+    //         animacaoApagarOrdenado(label);
+    //         setTimeout(() => {
+    //             labelContrucao = $scope.bemVindo.split(' ');
+    //             labelContrucao = ` ${$scope.bemVindoSegundaParte}`;
+    //             executarAnimacao(label, labelContrucao);
+    //             setTimeout(() => {
+    //                 animacaoApagarOrdenado(label);
+    //                 setTimeout(() => {
+    //                     labelContrucao = $scope.bemVindo.split(' ');
+    //                     labelContrucao = ` ${$scope.bemVindoTerceiraParte}`;
+    //                     executarAnimacao(label, labelContrucao);
+    //                 }, totalCaracteres);
+    //             }, totalCaracteres);
+    //         }, totalCaracteres);
+    //     }, totalCaracteres + 1000);
+    // }
+
+    function animarLabelBemVindo() {
+        var label = document.getElementById("bem-vindo");
+        var labelContrucao = $scope.bemVindo;
+        var totalCaracteres = labelContrucao.split('').length * 75;
+        label.innerHTML = '';
+        executarAnimacao(label, labelContrucao);
+        setTimeout(() => {
+        escreverPalavras($scope.bemVindoSegundaParte, labelContrucao, label, totalCaracteres, totalCaracteres);
+        escreverPalavras($scope.bemVindoTerceiraParte, labelContrucao, label, totalCaracteres + 4500, totalCaracteres);
+        }, totalCaracteres);
+    }
+
+    function escreverPalavras (palavra, labelContrucao, label, tempoDelecao, tempoInserir) {
+        setTimeout(() => {
+            console.log('Entrei');
+            animacaoApagarOrdenado(label);
+            setTimeout(() => {
+                labelContrucao = ` ${palavra}`;
+                executarAnimacao(label, labelContrucao);
+            }, tempoInserir);
+        }, tempoDelecao);
+    }
+
+    function animacaoApagarOrdenado(label) {
+        var arrayPalavras = label.innerHTML.split(' ');
+        var arrayLimiteDelecao = `${arrayPalavras[0]} ${arrayPalavras[1]}`;
+        label.innerHTML.split('').forEach((character, cont)=> {
+            setTimeout(() => {
+                if (arrayLimiteDelecao.length === label.innerHTML.length) {
+                    return;
+                }
+                label.innerHTML = label.innerHTML.split('').splice(0, label.innerHTML.length - 1).join('');
+            }, 75 * cont);
+        })
+    }
+
+    function executarAnimacao(label, labelContrucao) {
+        labelContrucao.split('').forEach((character, i) => {
+            setTimeout(() => {
+                label.innerHTML = label.innerHTML + labelContrucao[i];
+            }, 75 * i);
+        });
     }
     
     function idiomaIngles(){
-        
+
         if($scope.inicio == "Home"){
            
             return;
@@ -145,6 +220,10 @@ function($scope) {
         $scope.desenvolvedor =              "Web Developer";
         
         $scope.bemVindo =                   "Welcome to My Curriculum!";
+
+        $scope.bemVindoSegundaParte =       "My Career!";
+
+        $scope.bemVindoTerceiraParte =      " My Curriculum!";
         
         $scope.anos =                       "Years";
         
@@ -307,14 +386,14 @@ function($scope) {
         $scope.footer2 =                    "© 2018 Created and Developed by Breno Prata";
         
         /*---------------------------- Footer -------------------------------------*/
-            
+
         }
         
         
     }
     
     function idiomaPortugues(){
-        
+
         if($scope.inicio == "Início"){
            
             return;
@@ -350,6 +429,10 @@ function($scope) {
         $scope.desenvolvedor =              "Desenvolvedor Web";
         
         $scope.bemVindo =                   "Bem Vindo ao Meu Currículo!";
+
+        $scope.bemVindoSegundaParte =       "à Minha Carreira!";
+
+        $scope.bemVindoTerceiraParte =      "ao Meu Currículo!";
         
         $scope.anos =                       "Anos";
         
@@ -511,7 +594,7 @@ function($scope) {
         $scope.footer2 =                    "© 2018 Criado e Desenvolvido por Breno Prata";
         
         /*---------------------------- Footer -------------------------------------*/
-            
+
         }
         
     }
@@ -552,7 +635,11 @@ function($scope) {
 
             $scope.desenvolvedor =              "Desarrollador Web";
 
-            $scope.bemVindo =                   "Bienvenido a Mi Currículum!";
+            $scope.bemVindo =                   "Bienvenido a Mi Currículo!";
+
+            $scope.bemVindoSegundaParte =       " Mi Carrera!";
+
+            $scope.bemVindoTerceiraParte =      " Mi Currículo!";
 
             $scope.anos =                       "Años";
 

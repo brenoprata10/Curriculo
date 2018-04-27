@@ -210,6 +210,22 @@ html {
     width: 25%;
 }
 
+.bem-vindo-label {
+    border-right: solid 3px black;
+    padding-right: 5px;
+    animation: cursor-animation 1s infinite;
+}
+
+@keyframes cursor-animation {
+    0%, 100% {
+        border-right-color: rgba(255, 255, 255, 1);
+    }
+
+    50% {
+        border-right-color: rgba(255, 255, 255, 0);
+    }
+}
+
 @media(max-width: 992px) {
     .ng-view {
         padding-top: 50px;
