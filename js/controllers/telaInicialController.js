@@ -12,7 +12,7 @@ function($scope) {
 
         idiomaIngles();
 
-        animarLabelBemVindo();
+        // animarLabelBemVindo();
         
     }
     
@@ -22,7 +22,7 @@ function($scope) {
 
         idiomaPortugues();
 
-        animarLabelBemVindo();
+        // animarLabelBemVindo();
         
     }
     
@@ -32,7 +32,7 @@ function($scope) {
 
         idiomaEspanhol();
 
-        animarLabelBemVindo();
+        // animarLabelBemVindo();
         
     }
     
@@ -59,7 +59,6 @@ function($scope) {
             $('.slider').slider();
         });
 
-        animarLabelBemVindo();
     }
 
     $scope.abrirCurriculo = function () {
