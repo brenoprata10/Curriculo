@@ -127,30 +127,6 @@ function($scope) {
 
     }
 
-    // function animarLabelBemVindo() {
-    //     var label = document.getElementById("bem-vindo");
-    //     var labelContrucao = $scope.bemVindo;
-    //     var totalCaracteres = labelContrucao.split('').length * 75;
-    //     label.innerHTML = '';
-    //     executarAnimacao(label, labelContrucao);
-    //     setTimeout(() => {
-    //         animacaoApagarOrdenado(label);
-    //         setTimeout(() => {
-    //             labelContrucao = $scope.bemVindo.split(' ');
-    //             labelContrucao = ` ${$scope.bemVindoSegundaParte}`;
-    //             executarAnimacao(label, labelContrucao);
-    //             setTimeout(() => {
-    //                 animacaoApagarOrdenado(label);
-    //                 setTimeout(() => {
-    //                     labelContrucao = $scope.bemVindo.split(' ');
-    //                     labelContrucao = ` ${$scope.bemVindoTerceiraParte}`;
-    //                     executarAnimacao(label, labelContrucao);
-    //                 }, totalCaracteres);
-    //             }, totalCaracteres);
-    //         }, totalCaracteres);
-    //     }, totalCaracteres + 1000);
-    // }
-
     function animarLabelBemVindo() {
         var label = document.getElementById("bem-vindo");
         var labelContrucao = $scope.bemVindo;
@@ -165,7 +141,6 @@ function($scope) {
 
     function escreverPalavras (palavra, labelContrucao, label, tempoDelecao, tempoInserir) {
         $scope.timeouts.push(setTimeout(() => {
-            console.log('Entrei');
             animacaoApagarOrdenado(label);
             $scope.timeouts.push(setTimeout(() => {
                 labelContrucao = ` ${palavra}`;
