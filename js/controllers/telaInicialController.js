@@ -177,7 +177,7 @@ function($scope) {
             clearTimeout(i);
         }
 
-        document.getElementById('bem-vindo').innerHTML = '';
+        // document.getElementById('bem-vindo').innerHTML = '';
     }
     
     function idiomaIngles(){
