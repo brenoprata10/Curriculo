@@ -129,6 +129,9 @@ function($scope) {
 
     function animarLabelBemVindo() {
         var label = document.getElementById("bem-vindo");
+        if (!label) {
+            return;
+        }
         var labelContrucao = $scope.bemVindo;
         var totalCaracteres = labelContrucao.split('').length * 75;
         label.innerHTML = '';
