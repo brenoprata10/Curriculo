@@ -1,19 +1,17 @@
 app.controller('TelaInicialCtrl',
 
-function($scope) {           
+function($scope, $state) {
     
     carregarTela();
 
-    $scope.timeouts = [];
-    
     $scope.idiomaIngles = function (){
 
         limparTimeouts();
 
         idiomaIngles();
 
-        // animarLabelBemVindo();
-        
+        animarLabelBemVindo();
+
     }
     
     $scope.idiomaPortugues = function (){
@@ -22,7 +20,7 @@ function($scope) {
 
         idiomaPortugues();
 
-        // animarLabelBemVindo();
+        animarLabelBemVindo();
         
     }
     
@@ -32,7 +30,7 @@ function($scope) {
 
         idiomaEspanhol();
 
-        // animarLabelBemVindo();
+        animarLabelBemVindo();
         
     }
     
@@ -58,6 +56,8 @@ function($scope) {
         $(document).ready(function(){
             $('.slider').slider();
         });
+
+        animarLabelBemVindo();
 
     }
 
@@ -135,49 +135,47 @@ function($scope) {
         var totalCaracteres = labelContrucao.split('').length * 75;
         label.innerHTML = '';
         executarAnimacao(label, labelContrucao);
-        $scope.timeouts.push(setTimeout(() => {
-        escreverPalavras($scope.bemVindoSegundaParte, labelContrucao, label, totalCaracteres, totalCaracteres);
-        escreverPalavras($scope.bemVindoTerceiraParte, labelContrucao, label, totalCaracteres + 4500, totalCaracteres);
-        }, totalCaracteres));
+        setTimeout(() => {
+            escreverPalavras($scope.bemVindoSegundaParte, labelContrucao, label, totalCaracteres, totalCaracteres);
+            escreverPalavras($scope.bemVindoTerceiraParte, labelContrucao, label, totalCaracteres + 4500, totalCaracteres);
+        }, totalCaracteres);
     }
 
     function escreverPalavras (palavra, labelContrucao, label, tempoDelecao, tempoInserir) {
-        $scope.timeouts.push(setTimeout(() => {
+        setTimeout(() => {
             animacaoApagarOrdenado(label);
-            $scope.timeouts.push(setTimeout(() => {
+            setTimeout(() => {
                 labelContrucao = ` ${palavra}`;
                 executarAnimacao(label, labelContrucao);
-            }, tempoInserir));
-        }, tempoDelecao));
+            }, tempoInserir);
+        }, tempoDelecao);
     }
 
     function animacaoApagarOrdenado(label) {
         var arrayPalavras = label.innerHTML.split(' ');
         var arrayLimiteDelecao = `${arrayPalavras[0]} ${arrayPalavras[1]}`;
         label.innerHTML.split('').forEach((character, cont)=> {
-            $scope.timeouts.push(setTimeout(() => {
+            setTimeout(() => {
                 if (arrayLimiteDelecao.length === label.innerHTML.length) {
                     return;
                 }
                 label.innerHTML = label.innerHTML.split('').splice(0, label.innerHTML.length - 1).join('');
-            }, 75 * cont));
+            }, 75 * cont);
         })
     }
 
     function executarAnimacao(label, labelContrucao) {
         labelContrucao.split('').forEach((character, i) => {
-            $scope.timeouts.push(setTimeout(() => {
+            setTimeout(() => {
                 label.innerHTML = label.innerHTML + labelContrucao[i];
-            }, 75 * i));
+            }, 75 * i);
         });
     }
 
     function limparTimeouts() {
-        for (var i = 0; i < 500; i++) {
-            clearTimeout(i);
-        }
 
-        // document.getElementById('bem-vindo').innerHTML = '';
+        document.getElementById("bem-vindo").innerHTML = '';
+
     }
     
     function idiomaIngles(){
@@ -188,10 +186,6 @@ function($scope) {
             
         }else{
             
-            var $toastContent = $('<span class="valign-wrapper"><img style="height:40px;" src="resources/united-states.png">&nbsp&nbspEnglish</span>');
-        
-            Materialize.toast($toastContent, 1600,'rounded');
-        
         /*---------------------------- Menu ---------------------------------------*/
         
         $scope.inicio =                     "Home";   
@@ -395,10 +389,6 @@ function($scope) {
             
         if($scope.inicio != undefined){
 
-            var $toastContent = $('<span class="valign-wrapper"><img style="height:40px;" src="resources/brazil.png">&nbsp&nbspPortuguês PT-BR</span>');
-
-            Materialize.toast($toastContent, 1600, 'rounded');
-
         }
         
         /*---------------------------- Menu ---------------------------------------*/
@@ -601,10 +591,6 @@ function($scope) {
         }else{
 
             if($scope.inicio != undefined){
-
-                var $toastContent = $('<span class="valign-wrapper"><img style="height:40px;" src="resources/spain.png">&nbsp&nbsp Espanhol</span>');
-
-                Materialize.toast($toastContent, 1600, 'rounded');
 
             }
 

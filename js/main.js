@@ -1,20 +1,30 @@
-var app = angular.module("CurriculoApp", ["ngRoute"]);
+var app = angular.module("CurriculoApp", ["ui.router"]);
 
-app.config(function($routeProvider) {
-  $routeProvider
-  .when("/", {
-    templateUrl : "telaInicial.html"
+app.config(function($stateProvider) {
+  $stateProvider
+  .state({
+    name: 'telaInicial',
+    url: '/',
+  templateUrl : "telaInicial.html"
   })
-  .when("/experiencia", {
+  .state({
+    name: 'experiencia',
+    url: '/experiencia',
     templateUrl : "experiencia.html"
   })
-  .when("/formacao", {
+  .state({
+    name: 'formacao',
+    url: '/formacao',
     templateUrl : "formacao.html"
   })
-  .when("/contato", {
+  .state({
+    name: 'contato',
+    url: '/contato',
     templateUrl : "contato.html"
   })
-  .when("/certificados", {
+  .state({
+    name: 'certificados',
+    url: '/certificados',
     templateUrl : "certificados.html"
   });
 });
