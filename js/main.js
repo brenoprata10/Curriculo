@@ -1,11 +1,11 @@
 var app = angular.module("CurriculoApp", ["ui.router"]);
 
-app.config(function($stateProvider) {
+app.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
   .state({
     name: 'telaInicial',
     url: '/',
-  templateUrl : "telaInicial.html"
+    templateUrl : "telaInicial.html"
   })
   .state({
     name: 'experiencia',
@@ -26,5 +26,11 @@ app.config(function($stateProvider) {
     name: 'certificados',
     url: '/certificados',
     templateUrl : "certificados.html"
+  })
+  .state('/', {
+      name: 'telaInicial',
+      url: '/',
+      templateUrl : "telaInicial.html"
   });
+  $urlRouterProvider.otherwise('/');
 });
