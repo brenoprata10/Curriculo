@@ -91,9 +91,9 @@ function($scope, $state) {
     
     function carregarTela(){
 
-        var userLang = navigator.language || navigator.userLanguage;
+        var userLang = window.navigator.languages;
 
-        switch(userLang.substr(0,2)) {
+        switch(userLang[0].substr(0,2)) {
             case 'en':
                 idiomaIngles();
                 break;
