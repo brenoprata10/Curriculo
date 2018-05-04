@@ -123,6 +123,11 @@ html {
     position: static;
 }
 
+.npm-svg {
+    height: 62px;
+    width: 50px;
+}
+
 .campoCursos {
     display: flex;
     flex-wrap: wrap;
