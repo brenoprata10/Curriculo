@@ -351,6 +351,10 @@ function($scope, $state) {
         $scope.descricaoIonic2Parte1 =      "Ionic 2 part 1: Mobile hybrid applications even more powerful";
 
         $scope.descricaoIonic2Parte2 =      "Ionic 2 part 2: Mobile hybrid applications even more powerful";
+
+        $scope.descricaoExpressaoRegular =  "Regular Expressions: Capturing texts like magic";
+
+        $scope.descricaoSass =              "Sass and compass, uncomplicated CSS";
         
         $scope.descricaoEADHackatruck =     "EAD Hackatruck - Concepts and Fundamentals SWIFT";
         
@@ -555,6 +559,10 @@ function($scope, $state) {
         $scope.descricaoIonic2Parte1 =      "Ionic 2 parte 1: Aplicações híbridas mobile ainda mais poderosas";
 
         $scope.descricaoIonic2Parte2 =      "Ionic 2 parte 2: Aplicações híbridas mobile ainda mais poderosas";
+
+        $scope.descricaoExpressaoRegular =  "Expressões regulares: Capturando textos de forma mágica";
+
+        $scope.descricaoSass =              "Sass e Compass: Descomplicando o CSS";
             
         $scope.descricaoEADHackatruck =     "EAD Hackatruck - Conceitos e Fundamentos SWIFT";
         
@@ -759,7 +767,11 @@ function($scope, $state) {
 
             $scope.descricaoIonic2Parte2 =      "Ionic 2 parte 2: Aplicaciones híbridas móviles aún más poderosas";
 
+            $scope.descricaoSass =              "Sass y Compass: Descomplicando el CSS";
+
             $scope.descricaoEADHackatruck =     "EAD Hackatruck - Conceptos y Fundamentos SWIFT";
+
+            $scope.descricaoExpressaoRegular =  "Regular Expresiones: Capturando textos mágicamente";
 
             $scope.descricaoHackatruck =        "Presencial Hackatruck Desarrollo SWIFT";
 
