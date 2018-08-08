@@ -355,6 +355,8 @@ function($scope, $state) {
         $scope.descricaoExpressaoRegular =  "Regular Expressions: Capturing texts like magic";
 
         $scope.descricaoSass =              "Sass and compass, uncomplicated CSS";
+
+        $scope.descricaoSpringboot =        "Spring Boot: Agility in java development with Spring";
         
         $scope.descricaoEADHackatruck =     "EAD Hackatruck - Concepts and Fundamentals SWIFT";
         
@@ -563,6 +565,8 @@ function($scope, $state) {
         $scope.descricaoExpressaoRegular =  "Expressões regulares: Capturando textos de forma mágica";
 
         $scope.descricaoSass =              "Sass e Compass: Descomplicando o CSS";
+
+        $scope.descricaoSpringboot =        "Curso Spring Boot: Agilidade no desenvolvimento java com Spring";
             
         $scope.descricaoEADHackatruck =     "EAD Hackatruck - Conceitos e Fundamentos SWIFT";
         
@@ -768,6 +772,8 @@ function($scope, $state) {
             $scope.descricaoIonic2Parte2 =      "Ionic 2 parte 2: Aplicaciones híbridas móviles aún más poderosas";
 
             $scope.descricaoSass =              "Sass y Compass: Descomplicando el CSS";
+
+            $scope.descricaoSpringboot =        "Curso Spring Boot: Agilidad en el desarrollo de Java con Spring";
 
             $scope.descricaoEADHackatruck =     "EAD Hackatruck - Conceptos y Fundamentos SWIFT";
 

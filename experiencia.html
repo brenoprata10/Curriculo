@@ -16,17 +16,48 @@
             
             <h5 class="col s12 m12 l12 wow slideInUp flow-text"><i class="fa fa-angle-down" aria-hidden="true"></i><strong> Basis:</strong></h5>
 
-            <p class="flow-text col s12 m12 offset-l1 l11"><i class="fa fa-arrow-right" aria-hidden="true"></i> <b>{{periodo}}:</b> <strong>11/2017</strong> {{ate}} <strong>---</strong> ({{desenvolvedor}})</p>
+            <p class="flow-text col s12 m12 offset-l1 l11" style="line-height: 20px;"><i class="fa fa-arrow-right" aria-hidden="true"></i> <b>{{periodo}}:</b> <strong>11/2017</strong> {{ate}} <strong>---</strong> ({{desenvolvedor}})</p>
             
-            <p class="flow-text col s12 m12 offset-l1 l11"><i class="fa fa-arrow-right" aria-hidden="true"></i> <b>{{periodo}}:</b> <strong>07/2017</strong> {{ate}} <strong>11/2017</strong> (Junior)</p>
+            <p class="flow-text col s12 m12 offset-l1 l11" style="line-height: 20px;"><i class="fa fa-arrow-right" aria-hidden="true"></i> <b>{{periodo}}:</b> <strong>07/2017</strong> {{ate}} <strong>11/2017</strong> (Junior)</p>
             
             <p class="flow-text col s12 m12 offset-l1 l11"><i class="fa fa-arrow-right" aria-hidden="true"></i> <b>{{cargo}}:</b> {{desenvolvedor}}</p>
             
             <p class="flow-text col s12 m12 offset-l1 l11"><i class="fa fa-arrow-right" aria-hidden="true"></i> <b>{{area}}:</b> {{desenvolvimento}} Web</p>
             
             <h5 class="col s12 m12 offset-l1 l11 wow slideInUp flow-text"><i class="fa fa-angle-down" aria-hidden="true"></i><strong> {{participacoes}}:</strong></h5>
-            
+
             <div class="card col s12 m6 offset-l1 l3 hoverable wow slideInLeft">
+
+                <div class="card-image waves-effect waves-teal waves-light" style="display:flex; align-content:center">
+
+                    <img class="activator responsive-img" src="resources/youtube.png" style="max-height: 146px">
+
+                </div>
+
+                <div class="card-content">
+
+                    <span class="card-title activator grey-text text-darken-4 waves-effect waves-teal" >Workshop</span>
+
+                    <button class="btn activator" style="width:100%">Workshop</button>
+
+                </div>
+
+                <div class="card-reveal">
+
+                    <h5 class="card-title grey-text text-darken-4">Workshop<i class="material-icons right">close</i></h5>
+
+                    <p class="flow-text" style="white-space:nowrap">
+
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <a href="" onclick="window.open('https://www.youtube.com/watch?v=nDPNIeZl7mo&feature=youtu.be')">Angular 2+</a>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="card col s12 m6 offset-l1 l3 hoverable wow slideInUp">
                 
                 <div class="card-image waves-effect waves-teal waves-light" style="display:flex; align-content:center">
                     
@@ -48,12 +79,60 @@
                     
                     <p class="flow-text tooltipped" data-position="right" data-delay="50" data-tooltip="Cartão Reforma" style="white-space:nowrap">
                         
-                        <i class="fa fa-circle" aria-hidden="true"></i>Cartão Reforma
+                        <i class="fa fa-circle" aria-hidden="true"></i> Cartão Reforma
                     
                     </p>
                     
                 </div>
                 
+            </div>
+
+            <div class="card col s12 m6 offset-l1 l3 hoverable wow slideInRight">
+
+                <div class="card-image waves-effect waves-teal waves-light" style="display:flex; align-content:center">
+
+                    <img class="activator responsive-img" src="resources/mpog.jpg" style="max-height: 146px">
+
+                </div>
+
+                <div class="card-content">
+
+                    <span class="card-title activator grey-text text-darken-4 waves-effect waves-teal" >MPOG</span>
+
+                    <button class="btn activator" style="width:100%">{{projetos}}</button>
+
+                </div>
+
+                <div class="card-reveal">
+
+                    <h5 class="card-title grey-text text-darken-4">{{projetos}}<i class="material-icons right">close</i></h5>
+
+                    <p class="flow-text tooltipped" data-position="right" data-delay="50" data-tooltip="Siapa" style="white-space:nowrap">
+
+                        <i class="fa fa-circle" aria-hidden="true"></i> Siapa
+
+                    </p>
+
+                    <p class="flow-text tooltipped" data-position="right" data-delay="50" data-tooltip="Barramento" style="white-space:nowrap">
+
+                        <i class="fa fa-circle" aria-hidden="true"></i> Barramento
+
+                    </p>
+
+                    <p class="flow-text tooltipped" data-position="right" data-delay="50" data-tooltip="Gestão de Riscos" style="white-space:nowrap">
+
+                        <i class="fa fa-circle" aria-hidden="true"></i> Gestão de Riscos
+
+                    </p>
+
+                    <p class="flow-text tooltipped" data-position="right" data-delay="50" data-tooltip="Indicadores" style="white-space:nowrap">
+
+                        <i class="fa fa-circle" aria-hidden="true"></i> SIEST - Indicadores
+
+                    </p>
+
+                </div>
+
             </div>
             
              <p class="divider col s12 m12 l12"></p>
@@ -108,7 +187,7 @@
             
             <p class="flow-text col s12 m12 offset-l1 l11"><i class="fa fa-arrow-right" aria-hidden="true"></i> <b>{{periodo}}:</b> <strong>03/2016</strong> {{ate}} <strong>03/2017</strong></p>
             
-            <p class="flow-text col s12 m12 offset-l1 l11"><i class="fa fa-arrow-right" aria-hidden="true"></i> <b>{{cargo}}:</b> {{estagiario}} {{desenvolvimento}}</p>
+            <p class="flow-text col s12 m12 offset-l1 l11" style="line-height: 20px"><i class="fa fa-arrow-right" aria-hidden="true"></i> <b>{{cargo}}:</b> {{estagiario}} {{desenvolvimento}}</p>
             
             <p class="flow-text col s12 m12 offset-l1 l11"><i class="fa fa-arrow-right" aria-hidden="true"></i> <b>{{area}}:</b> {{desenvolvimento}} Web</p>
             
@@ -222,7 +301,7 @@
             
             <h5 class="col s12 m12 l12 wow slideInUp flow-text"><i class="fa fa-angle-down" aria-hidden="true"></i><strong> Campus Party Brasília</strong></h5>
             
-            <p class="flow-text col s12 m12 offset-l1 l11"><i class="fa fa-arrow-right" aria-hidden="true"></i> <b>{{periodo}}:</b> <strong>14/06/2017</strong> {{ate}} <strong>18/06/2017</strong></p>
+            <p class="flow-text col s12 m12 offset-l1 l11" style="line-height: 20px"><i class="fa fa-arrow-right" aria-hidden="true"></i> <b>{{periodo}}:</b> <strong>14/06/2017</strong> {{ate}} <strong>18/06/2017</strong></p>
             
             <h5 class="col s12 m12 offset-l1 l11 wow slideInUp flow-text"><i class="fa fa-angle-down" aria-hidden="true"></i><strong> Hackathons:</strong></h5>
             
@@ -260,6 +339,41 @@
 
                 </div>
                 
+            </div>
+
+            <p class="col s12 m12 l12 divider"></p>
+
+            <img class="responsive-img wow slideInRight col s12 m5 l3" src="resources/npm.png" style="margin-bottom: -59px;margin-top: -79px;">
+
+            <h5 class="col s12 m12 l12 wow slideInUp flow-text"><i class="fa fa-angle-down" aria-hidden="true"></i><strong> NPM</strong></h5>
+
+            <div class="card col s12 m6 offset-l1 l3 hoverable wow slideInLeft">
+
+                <div class="card-image waves-effect waves-teal waves-light" style="display:flex; align-content:center">
+
+                    <img class="activator responsive-img" src="resources/npm.svg" style="background-color: #cb3937;max-height: 146px">
+
+                </div>
+
+                <div class="card-content">
+
+                    <button class="btn activator" style="width:100%">{{projetos}}</button>
+
+                </div>
+
+                <div class="card-reveal">
+
+                    <h5 class="card-title grey-text text-darken-4">{{projetos}}<i class="material-icons right">close</i></h5>
+
+                    <p class="flow-text tooltipped" data-position="right" data-delay="50" data-tooltip="Ng2-Image Viewer">
+
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <a href="" onclick="window.open('https://www.npmjs.com/package/ng2-image-viewer')">Ng2-Image Viewer</a>
+
+                    </p>
+
+                </div>
+
             </div>
             
         </div>
